@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Nikolay Kozlov](https://up.htmlacademy.ru/adaptive/27/user/2107549).
-* Наставник: `Неизвестно`.
+* Наставник: [Микаел Магтесян](https://htmlacademy.ru/profile/id1100875).
 
 ---
 
