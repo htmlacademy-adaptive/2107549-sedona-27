@@ -1,12 +1,149 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/city-of-sedona-logo.svg" width="185" height="96" alt="Логотип города Седона.">
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <nav class="main-header__nav">
+        <button class="nav__toggle nav__toggle--off" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main class="main-container">
+      <h1 class="visually-hidden">Седона.</h1>
+
+      <section class="background-image">
+        <img class="welcome-logo" src="img/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в прекрасный город Седона.">
+      </section>
+
+      <section class="description">
+        <h2 class="description__sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="description__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества Седоны.</h2>
+
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item-with-photo">
+            <h3 class="advantages__title">Настоящий городок</h3>
+            <p class="advantages__number">&mdash; №1 &mdash;</p>
+            <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="sedona-city-photo" src="img/sedona-city-photo.jpg" width="520" height="260" alt="Седона.">
+          </li>
+          <li class="advantages__item advantages__item-with-icon">
+            <h3 class="advantages__title">Жилье</h3>
+            <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="advantages__item advantages__item-with-icon">
+            <h3 class="advantages__title">Еда</h3>
+            <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages__item advantages__item-with-icon">
+            <h3 class="advantages__title">Сувениры</h3>
+            <p class="advantages__description">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="advantages__item advantages__item-with-photo">
+            <h3 class="advantages__title">Тут есть мост дьявола</h3>
+            <p class="advantages__number">&mdash; №2 &mdash;</p>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="sedona-bridge-photo" src="img/sedona-bridge-photo.jpg" width="520" height="260" alt="Мост Седоны.">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <p class="advantages__number">&mdash; №3 &mdash;</p>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p class="advantages__number">&mdash; №4 &mdash;</p>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мало туристов</h3>
+            <p class="advantages__number">&mdash; №5 &mdash;</p>
+            <p class="advantages__description">Большинство едет в Гранд-Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hotel-search">
+        <h2 class="hotel-search__header">Заинтересовались?</h2>
+        <p class="hotel-search__contents">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="hotel-search__button" href="https://echo.htmlacademy.ru">Найти гостиницу</a>
+        <div class="hotel-search__map"></div> <!-- пока не разобрался как вставить сюда карту, сделаю позже -->
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
+
+      <ul class="page-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+            <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" fill="#81B3D2"/>
+              <g clip-path="url(#clip0_45687_181)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_45687_181">
+              <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
+              </clipPath>
+              </defs>
+            </svg>
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" fill="#81B3D2"/>
+              <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z" fill="white"/>
+            </svg>
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" fill="#81B3D2"/>
+              <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z" fill="white"/>
+            </svg>
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__developed-by">
+        <span class="developed-by__text">Разработано</span>
+        <a class="developed-by__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg aria-hidden="true" focusable="false" width="28" height="36" viewBox="0 0 60 60"><path xmlns="http://www.w3.org/2000/svg" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          <span class="visually-hidden">Html Academy.</span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
