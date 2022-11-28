@@ -124,42 +124,17 @@
         </div>
       </section>
 
-      <section class="video">
+      <section class="video"> <!-- не уверен, что правильно вставил видео, разберусь позже -->
         <div class="video__heading page-article">
           <h2 class="page-article__title">Все еще сомневаетесь?</h2>
           <p class="page-article__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
 
-        <div class="player">
-          <video class="player__presentation" poster="img/video-desktop.jpg" aria-label="Видеопрезентация туристического города Седона."></video>
-          <div class="player__controls">
-            <div class="player__progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0" aria-label="Прогресс бар">
-              <div class="player__progress-bar"></div>
-              <div class="player__progress-toddler" tabindex="0" aria-label="Ползунок поиска"></div>
-            </div>
-            <button class="player__button player__button--replay" type="button">
-              <span class="visually-hidden">Повтор</span>
-              <svg width="16" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#replay"></use>
-              </svg>
-            </button>
-            <button class="player__button player__button--subtitles" type="button">
-              <span class="visually-hidden">Субтитры</span>
-              <svg width="32" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#subtitle"></use>
-              </svg>
-            </button>
-            <button class="player__button player__button--fullscreen" type="button">
-              <span class="visually-hidden">Во весь экран</span>
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#fullscreen"></use>
-              </svg>
-            </button>
-          </div>
+        <div class="video__player">
+          <video class="sedona-video" width="280" height="177" poster="img/video-desktop.jpg" aria-label="Видеопрезентация туристического города Седона."></video>
         </div>
       </section>
     </main>
-
 
     <footer class="page-footer">
       <a class="page-footer__hashtag" href="#">#VISITSEDONA</a>
