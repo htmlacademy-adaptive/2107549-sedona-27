@@ -1,1 +1,7 @@
-@import "./blocks/fonts.scss";
+// general
+@import "./blocks/general/base.scss";
+@import "./blocks/general/fonts.scss";
+@import "./blocks/general/variables.scss";
+@import "./blocks/general/mixins.scss";
+
+// blocks
