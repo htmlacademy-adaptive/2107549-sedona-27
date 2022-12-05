@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 html,
 body {
   margin: 0;
@@ -6,6 +8,10 @@ body {
 html {
   box-sizing: border-box;
   height: 100%;
+}
+
+body {
+  @include mobile-view-centered();
 }
 
 .visually-hidden {
@@ -17,4 +23,9 @@ html {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+//delete later
+body {
+  background-color: rgb(62, 79, 104);
 }

@@ -1,3 +1,12 @@
-.nav-menu {
-  background-color: red;
+@import "./general/mixins.scss";
+
+.nav-menu__list {
+  font-family: $font;
+  list-style: none;
+}
+
+.nav-menu__link {
+  @include heading-font;
+  text-decoration: none;
+  color: $color-white;
 }
