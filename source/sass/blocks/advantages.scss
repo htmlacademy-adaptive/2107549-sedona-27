@@ -35,6 +35,16 @@
   padding-top: 54px;
 }
 
+.sedona-city-photo {
+  object-fit: cover;
+  height: 260px;
+}
+
+.sedona-bridge-photo {
+  object-fit: cover;
+  height: 260px;
+}
+
 .advantages__title--bridge {
   @include heading-font;
   text-align: center;
