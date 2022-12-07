@@ -1,13 +1,18 @@
 @import "./general/mixins.scss";
 @import "./general/variables.scss";
 
+.main-header {
+  position: relative;
+}
+
 .nav-menu {
   display: none; // скрывает меню
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .nav-menu__list {
-  position: relative;
-  bottom: 26px;
   font-family: $font;
   list-style: none;
   margin: 0;
@@ -16,12 +21,13 @@
 }
 
 .nav-menu__item {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  width: 320px;
+  min-width: 320px;
+  min-height: 55px;
+  justify-content: center;
   flex-direction: column;
   background-color: $color-sedona-blue;
-  padding: 17px 0;
 }
 
 .nav-menu__item--first::after {
