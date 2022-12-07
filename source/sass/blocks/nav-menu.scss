@@ -1,12 +1,65 @@
 @import "./general/mixins.scss";
+@import "./general/variables.scss";
+
+.nav-menu {
+  display: none; // скрывает меню
+}
 
 .nav-menu__list {
+  position: relative;
+  bottom: 26px;
   font-family: $font;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5b90ab;
+}
+
+.nav-menu__item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 320px;
+  flex-direction: column;
+  background-color: $color-sedona-blue;
+  padding: 17px 0;
+}
+
+.nav-menu__item--first::after {
+  position: absolute;
+  padding: 0;
+  top: 17px;
+  left: 278px;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: $color-black; // тут почему-то не добавлялась иконка поэтому пока-что вставил черный квадрат
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  content: '';
+}
+
+.nav-menu__item--second {
+  margin-top: 1px;
+  border-top: solid 1px #8fc2de;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu__item--third {
+  margin-top: 1px;
+  border-top: solid 1px #8fc2de;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu__item--fourth {
+  margin-top: 1px;
+  border-top: solid 1px #8fc2de;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
 .nav-menu__link {
   @include heading-font;
   text-decoration: none;
   color: $color-white;
+  text-align: center;
 }
