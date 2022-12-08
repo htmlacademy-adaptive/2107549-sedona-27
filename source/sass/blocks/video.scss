@@ -5,13 +5,13 @@
   text-align: center;
 }
 
-.page-article__title--video {
+.page-article-video__title {
   @include heading-font;
   margin: 0;
   padding-top: 25px;
 }
 
-.page-article__text--video {
+.page-article-video__text {
   @include basic-font;
   margin: 0;
   padding-top: 30px;

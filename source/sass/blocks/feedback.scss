@@ -1,0 +1,20 @@
+@import "./general/mixins.scss";
+@import "./general/variables.scss";
+
+.feedback__article {
+  text-align: center;
+  border-bottom: solid 1px $color-mercury;
+}
+
+.feedback__article-title {
+  @include heading-font;
+  margin: 0;
+  padding-top: 36px;
+}
+
+.feedback__article-text {
+  @include basic-font;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
