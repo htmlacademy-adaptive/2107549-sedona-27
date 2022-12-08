@@ -17,8 +17,8 @@
 }
 
 .hotel-search__button {
-  display: flex;
   @include heading-big-font;
+  display: flex;
   text-decoration: none;
   color: $color-white;
   background-color: $color-sedona-blue;
