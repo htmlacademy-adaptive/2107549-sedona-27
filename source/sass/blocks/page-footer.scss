@@ -1,5 +1,5 @@
-@import "./general/mixins.scss";
-@import "./general/variables.scss";
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
 
 .page-footer {
   display: flex;
@@ -13,10 +13,6 @@
   margin: 0;
   padding-top: 38px;
   color: $color-black;
-}
-
-.page-footer__social {
-  list-style: none;
 }
 
 .page-footer__developed-by {

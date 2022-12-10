@@ -1,11 +1,12 @@
 // general
-@import "./blocks/general/base.scss";
-@import "./blocks/general/fonts.scss";
-@import "./blocks/general/variables.scss";
-@import "./blocks/general/mixins.scss";
+@import "./general/base.scss";
+@import "./general/fonts.scss";
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
 
 // blocks
 @import "./blocks/main-container.scss";
+@import "./blocks/welcome-section.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/nav-menu.scss";
 @import "./blocks/description.scss";

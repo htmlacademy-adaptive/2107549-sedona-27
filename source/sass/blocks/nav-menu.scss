@@ -1,5 +1,5 @@
-@import "./general/mixins.scss";
-@import "./general/variables.scss";
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
 
 .main-header {
   position: relative;
@@ -14,7 +14,6 @@
 
 .nav-menu__list {
   font-family: $font;
-  list-style: none;
   margin: 0;
   padding: 0;
   background-color: #5b90ab;
@@ -28,39 +27,39 @@
   justify-content: center;
   flex-direction: column;
   background-color: $color-sedona-blue;
-}
 
-.nav-menu__item--first::after {
-  position: absolute;
-  padding: 0;
-  top: 17px;
-  left: 278px;
-  width: 23px;
-  height: 23px;
-  border: none;
-  background-color: $color-black; // тут почему-то не добавлялась иконка поэтому пока-что вставил черный квадрат
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  content: "";
-}
+  &--first::after {
+    position: absolute;
+    padding: 0;
+    top: 17px;
+    left: 278px;
+    width: 23px;
+    height: 23px;
+    border: none;
+    background-image: url(../../img/menu-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    content: "";
+  }
 
-.nav-menu__item--second {
-  margin-top: 1px;
-  border-top: solid 1px #8fc2de;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
+  &--second {
+    margin-top: 1px;
+    border-top: solid 1px #8fc2de;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
 
-.nav-menu__item--third {
-  margin-top: 1px;
-  border-top: solid 1px #8fc2de;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
+  &--third {
+    margin-top: 1px;
+    border-top: solid 1px #8fc2de;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
 
-.nav-menu__item--fourth {
-  margin-top: 1px;
-  border-top: solid 1px #8fc2de;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  &--fourth {
+    margin-top: 1px;
+    border-top: solid 1px #8fc2de;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
 }
 
 .nav-menu__link {

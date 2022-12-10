@@ -1,5 +1,5 @@
-@import "./general/mixins.scss";
-@import "./general/variables.scss";
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
 
 .feedback__article {
   text-align: center;
@@ -26,6 +26,29 @@
   padding: 0 20px;
   gap: 16px;
   border: none;
+
+  &--name {
+    padding-bottom: 39px;
+    border-bottom: solid 1px $color-mercury;
+  }
+
+  &--contacts {
+    padding-bottom: 34px;
+    border-bottom: solid 1px $color-mercury;
+  }
+
+  &--impression,
+  &--sight {
+    border-bottom: solid 1px $color-mercury;
+    padding-bottom: 24px;
+  }
+
+  &--submit {
+    display: flex;
+    gap: 0;
+    padding-top: 56px;
+    padding-bottom: 10px;
+  }
 }
 
 .feedback__legend {
@@ -35,71 +58,59 @@
   padding-bottom: 20px;
 }
 
-.feedback__field--name {
-  @include basic-font;
-  display: flex;
-  flex-direction: column;
-  color: $color-mine-shaft;
+.feedback__field {
+  &--name {
+    @include basic-font;
+    display: flex;
+    flex-direction: column;
+    color: $color-mine-shaft;
+  }
+
+  &--contacts {
+    @include basic-font;
+    display: flex;
+    flex-direction: column;
+    color: $color-mine-shaft;
+  }
+
+  &--impression,
+  &--sight {
+    @include heading-font;
+    text-transform: none;
+  }
 }
 
-.feedback__input--name {
-  @include heading-font;
-  display: block;
-  text-transform: none;
-  background-color: $color-concrete;
-  border: none;
-  margin: 0;
-  padding: 16px;
-}
+.feedback__input {
+  &--name {
+    @include heading-font;
+    display: block;
+    text-transform: none;
+    background-color: $color-concrete;
+    border: none;
+    margin: 0;
+    padding: 16px;
+  }
 
-.feedback__item--name {
-  padding-bottom: 39px;
-  border-bottom: solid 1px $color-mercury;
-}
+  &--contacts {
+    @include heading-font;
+    display: block;
+    text-transform: none;
+    background-color: $color-concrete;
+    border: none;
+    margin: 0;
+    padding: 16px;
+  }
 
-.feedback__field--contacts {
-  @include basic-font;
-  display: flex;
-  flex-direction: column;
-  color: $color-mine-shaft;
-}
+  &--contacts::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
-.feedback__input--contacts {
-  @include heading-font;
-  display: block;
-  text-transform: none;
-  background-color: $color-concrete;
-  border: none;
-  margin: 0;
-  padding: 16px;
-}
-
-.feedback__input--contacts::placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.feedback__item--contacts {
-  padding-bottom: 34px;
-  border-bottom: solid 1px $color-mercury;
-}
-
-/*.feedback__input--contacts::after {  -- тут почему-то тоже не работает псевдо элемент
-  background: $color-whisper;
-  width: 58px;
-  height: 58px;
-  content: "";
-}*/
-
-.feedback__field--impression,
-.feedback__field--sight {
-  @include heading-font;
-  text-transform: none;
-}
-
-.feedback__item--impression,
-.feedback__item--sight {
-  border-bottom: solid 1px $color-mercury;
-  padding-bottom: 24px;
+  &--contacts::after { // -- тут почему-то не работает. что добавить?
+    background: $color-whisper;
+    width: 58px;
+    height: 58px;
+    content: "";
+  }
 }
 
 .textarea__input {
@@ -109,17 +120,10 @@
   padding: 16px;
   min-width: 247px;
   min-height: 118px;
-}
 
-.textarea__input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.feedback__item--submit {
-  display: flex;
-  gap: 0;
-  padding-top: 56px;
-  padding-bottom: 10px;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .feedback__submit-button {

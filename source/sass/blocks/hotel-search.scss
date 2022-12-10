@@ -1,5 +1,5 @@
 @import "./general/mixins.scss";
-@import "./general/variables.scss";
+@import "../general/variables.scss";
 
 .hotel-search__header {
   @include heading-big-font;
@@ -29,4 +29,6 @@
 
 .hotel-search__map {
   margin-top: 49px;
+  background-image: url(../../img/map-mobile.png);
+  background-repeat: no-repeat;
 }

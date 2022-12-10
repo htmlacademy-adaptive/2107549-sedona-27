@@ -1,5 +1,5 @@
-@import "./general/mixins.scss";
-@import "./general/variables.scss";
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
 
 .gallery__heading {
   text-align: center;
@@ -25,7 +25,6 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .gallery-card {

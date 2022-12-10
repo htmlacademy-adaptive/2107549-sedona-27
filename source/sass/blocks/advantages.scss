@@ -1,14 +1,5 @@
-@import "./general/mixins.scss";
-@import "./general/variables.scss";
-
-.advantages {
-  margin-top: 32px;
-}
-
-.advantages__list,
-.advantages__sublist {
-  list-style: none;
-}
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
 
 .advantages__list {
   margin: 0;
@@ -19,6 +10,12 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
+
+  &--space,
+  &--road,
+  &--tourists {
+    background-color: $color-gallery;
+  }
 }
 
 .advantages__title {
@@ -26,13 +23,20 @@
   text-align: center;
   margin: 0;
   padding-top: 24px;
-}
 
-.advantages__title--real-city {
-  @include heading-font;
-  text-align: center;
-  margin: 0;
-  padding-top: 54px;
+  &--real-city {
+    @include heading-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 54px;
+  }
+
+  &--bridge {
+    @include heading-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 37px;
+  }
 }
 
 .sedona-city-photo {
@@ -45,13 +49,6 @@
   height: 260px;
 }
 
-.advantages__title--bridge {
-  @include heading-font;
-  text-align: center;
-  margin: 0;
-  padding-top: 37px;
-}
-
 .advantages__number {
   @include basic-font;
   text-align: center;
@@ -59,10 +56,10 @@
   padding-top: 17px;
   padding-bottom: 17px;
   color: $color-mine-shaft;
-}
 
-.advantages__number--real-city {
-  color: $color-white;
+  &--real-city {
+    color: $color-white;
+  }
 }
 
 .advantages__description {
@@ -71,36 +68,36 @@
   margin: 0;
   padding-bottom: 37px;
   color: $color-mine-shaft;
-}
 
-.advantages__description--tourists {
-  padding-bottom: 28px;
-}
+  &--tourists {
+    padding-bottom: 28px;
+  }
 
-.advantages__description--space,
-.advantages__description--road {
-  position: relative;
-}
+  &--space,
+  &--road {
+    position: relative;
+  }
 
-.advantages__description--space::after,
-.advantages__description--road::after {
-  position: absolute;
-  height: 1px;
-  width: 284px;
-  background: $color-alto;
-  margin: 0 auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: "";
+  &--space::after,
+  &--road::after {
+    position: absolute;
+    height: 1px;
+    width: 284px;
+    background: $color-alto;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+  }
+
+  &--real-city {
+    color: $color-white;
+  }
 }
 
 .advantages__item-with-photo {
   background-color: $color-sedona-blue;
-  color: $color-white;
-}
-
-.advantages__description--real-city {
   color: $color-white;
 }
 
@@ -109,12 +106,6 @@
   color: $color-black;
   padding-top: 36px;
   padding-bottom: 46px;
-}
-
-.advantages__item--space,
-.advantages__item--road,
-.advantages__item--tourists {
-  background-color: $color-gallery;
 }
 
 .sublist__item-title {
