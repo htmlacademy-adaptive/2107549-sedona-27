@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+// general
+@import "./general/base.scss";
+@import "./general/page.scss";
+@import "./general/fonts.scss";
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+// blocks
+@import "./blocks/main-container.scss";
+@import "./blocks/welcome-section.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/nav-menu.scss";
+@import "./blocks/description.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/hotel-search.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/video.scss";
+@import "./blocks/feedback.scss";

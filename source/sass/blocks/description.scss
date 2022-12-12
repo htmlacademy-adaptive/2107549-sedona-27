@@ -1,0 +1,15 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.description__sedona {
+  @include heading-font;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.description__reasons {
+  @include basic-font;
+  text-align: center;
+  color: $color-mine-shaft;
+  margin-top: 35px;
+}

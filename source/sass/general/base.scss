@@ -1,0 +1,33 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  @include mobile-view-centered();
+  background-color: $color-mercury;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

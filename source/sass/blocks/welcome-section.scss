@@ -1,0 +1,20 @@
+@import "../general/variables.scss";
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-image: url("../../img/background-sedona-picture.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-mine-shaft;
+
+  &--catalog, // тут не пойму как подогнать bg изображение под нужный размер как в макете
+  &--form {
+    padding-top: 52px;
+    padding-bottom: 67px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.video__heading {
+  text-align: center;
+}
+
+.page-article-video__title {
+  @include heading-font;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.page-article-video__text {
+  @include basic-font;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 38px;
+}
+
+.video__player {
+  text-align: center;
+}

@@ -1,0 +1,145 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.feedback__article {
+  text-align: center;
+  border-bottom: solid 1px $color-mercury;
+}
+
+.feedback__article-title {
+  @include heading-font;
+  margin: 0;
+  padding-top: 36px;
+}
+
+.feedback__article-text {
+  @include basic-font;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 20px;
+  gap: 16px;
+  border: none;
+
+  &--name {
+    padding-bottom: 39px;
+    border-bottom: solid 1px $color-mercury;
+  }
+
+  &--contacts {
+    padding-bottom: 34px;
+    border-bottom: solid 1px $color-mercury;
+  }
+
+  &--impression,
+  &--sight {
+    border-bottom: solid 1px $color-mercury;
+    padding-bottom: 24px;
+  }
+
+  &--submit {
+    display: flex;
+    gap: 0;
+    padding-top: 56px;
+    padding-bottom: 10px;
+  }
+}
+
+.feedback__legend {
+  @include heading-font;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.feedback__field {
+  &--name {
+    @include basic-font;
+    display: flex;
+    flex-direction: column;
+    color: $color-mine-shaft;
+  }
+
+  &--contacts {
+    @include basic-font;
+    display: flex;
+    flex-direction: column;
+    color: $color-mine-shaft;
+  }
+
+  &--impression,
+  &--sight {
+    @include heading-font;
+    text-transform: none;
+  }
+}
+
+.feedback__input {
+  &--name {
+    @include heading-font;
+    display: block;
+    text-transform: none;
+    background-color: $color-concrete;
+    border: none;
+    margin: 0;
+    padding: 16px;
+  }
+
+  &--contacts {
+    @include heading-font;
+    display: block;
+    text-transform: none;
+    background-color: $color-concrete;
+    border: none;
+    margin: 0;
+    padding: 16px;
+  }
+
+  &--contacts::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--contacts::after { // -- тут почему-то не работает. что добавить?
+    background: $color-whisper;
+    width: 58px;
+    height: 58px;
+    content: "";
+  }
+}
+
+.textarea__input {
+  @include heading-font;
+  border: none;
+  outline: none;
+  text-transform: none;
+  resize: none;
+  background-color: $color-concrete;
+  padding: 16px;
+  min-width: 247px;
+  min-height: 118px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.feedback__submit-button {
+  @include heading-big-font;
+  color: $color-white;
+  background-color: $color-sedona-blue;
+  padding: 16px 0;
+  border: none;
+}
+
+.feedback__note {
+  @include basic-font;
+  text-align: right;
+  padding-top: 5px;
+  color: rgba(51, 51, 51, 0.6);
+}

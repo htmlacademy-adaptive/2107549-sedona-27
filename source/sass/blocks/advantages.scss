@@ -1,0 +1,118 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+
+  &--space,
+  &--road,
+  &--tourists {
+    background-color: $color-gallery;
+  }
+}
+
+.advantages__title {
+  @include heading-font;
+  text-align: center;
+  margin: 0;
+  padding-top: 24px;
+
+  &--real-city {
+    @include heading-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 54px;
+  }
+
+  &--bridge {
+    @include heading-font;
+    text-align: center;
+    margin: 0;
+    padding-top: 37px;
+  }
+}
+
+.sedona-city-photo {
+  object-fit: cover;
+  height: 260px;
+}
+
+.sedona-bridge-photo {
+  object-fit: cover;
+  height: 260px;
+}
+
+.advantages__number {
+  @include basic-font;
+  text-align: center;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: $color-mine-shaft;
+
+  &--real-city {
+    color: $color-white;
+  }
+}
+
+.advantages__description {
+  @include basic-font;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 37px;
+  color: $color-mine-shaft;
+
+  &--tourists {
+    padding-bottom: 28px;
+  }
+
+  &--space,
+  &--road {
+    position: relative;
+  }
+
+  &--space::after,
+  &--road::after {
+    position: absolute;
+    height: 1px;
+    width: 284px;
+    background: $color-alto;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+  }
+
+  &--real-city {
+    color: $color-white;
+  }
+}
+
+.advantages__item-with-photo {
+  background-color: $color-sedona-blue;
+  color: $color-white;
+}
+
+.advantages__sublist {
+  background-color: $color-white;
+  color: $color-black;
+  padding-top: 36px;
+  padding-bottom: 46px;
+}
+
+.sublist__item-title {
+  @include heading-font;
+}
+
+.sublist__item-description {
+  @include basic-font;
+  padding-top: 16px;
+  color: $color-mine-shaft;
+}
+
+.sublist__item--food {
+  padding: 25px 0;
+}
