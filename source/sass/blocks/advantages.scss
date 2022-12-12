@@ -1,11 +1,6 @@
 @import "../general/mixins.scss";
 @import "../general/variables.scss";
 
-.advantages__list {
-  margin: 0;
-  padding: 0;
-}
-
 .advantages__item {
   display: flex;
   flex-direction: column;
@@ -110,12 +105,10 @@
 
 .sublist__item-title {
   @include heading-font;
-  margin: 0;
 }
 
 .sublist__item-description {
   @include basic-font;
-  margin: 0;
   padding-top: 16px;
   color: $color-mine-shaft;
 }

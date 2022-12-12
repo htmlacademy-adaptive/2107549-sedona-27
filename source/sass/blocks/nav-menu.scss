@@ -14,8 +14,6 @@
 
 .nav-menu__list {
   font-family: $font;
-  margin: 0;
-  padding: 0;
   background-color: #5b90ab;
 }
 
@@ -36,7 +34,7 @@
     width: 23px;
     height: 23px;
     border: none;
-    background-image: url(../../img/menu-icon.svg);
+    background-image: url("../../img/menu-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;

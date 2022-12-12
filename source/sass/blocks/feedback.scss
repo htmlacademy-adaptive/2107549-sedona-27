@@ -115,7 +115,10 @@
 
 .textarea__input {
   @include heading-font;
-  @include textarea;
+  border: none;
+  outline: none;
+  text-transform: none;
+  resize: none;
   background-color: $color-concrete;
   padding: 16px;
   min-width: 247px;

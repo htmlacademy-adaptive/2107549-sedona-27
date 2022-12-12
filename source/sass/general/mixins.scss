@@ -28,10 +28,3 @@
   line-height: 26px;
   text-transform: uppercase;
 }
-
-@mixin textarea {
-  border: none;
-  outline: none;
-  text-transform: none;
-  resize: none;
-}
