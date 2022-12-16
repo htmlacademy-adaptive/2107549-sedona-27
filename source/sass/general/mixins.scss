@@ -1,10 +1,5 @@
 @import "./variables.scss";
 
-@mixin mobile-view-centered {
-  margin: 0 auto;
-  max-width: 320px;
-}
-
 @mixin basic-font {
   font-family: $font;
   font-weight: $weight-basic;
