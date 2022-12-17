@@ -50,28 +50,30 @@
             <p class="feedback__article-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="feedback__item feedback__item--name">
-              <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
-              <label class="feedback__field feedback__field--name" for="name">Имя*:
-                <input class="feedback__input feedback__input--name" type="text" name="name" id="name" value="Пётр" required>
-              </label>
-              <label class="feedback__field feedback__field--name" for="surname">Фамилия*:
-                <input class="feedback__input feedback__input--name" type="text" name="surname" id="surname" value="Пустота" required>
-              </label>
-              <label class="feedback__field feedback__field--name" for="middle-name">Отчество:
-                <input class="feedback__input feedback__input--name" type="text" name="middle-name" id="middle-name" value="Викторович">
-              </label>
-            </fieldset>
+            <div class="feedback-wrapper">
+              <fieldset class="feedback__item feedback__item--name">
+                <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
+                <label class="feedback__field feedback__field--name" for="name">Имя*:
+                  <input class="feedback__input feedback__input--name" type="text" name="name" id="name" value="Пётр" required>
+                </label>
+                <label class="feedback__field feedback__field--name" for="surname">Фамилия*:
+                  <input class="feedback__input feedback__input--name" type="text" name="surname" id="surname" value="Пустота" required>
+                </label>
+                <label class="feedback__field feedback__field--name" for="middle-name">Отчество:
+                  <input class="feedback__input feedback__input--name" type="text" name="middle-name" id="middle-name" value="Викторович">
+                </label>
+              </fieldset>
 
-            <fieldset class="feedback__item feedback__item--contacts">
-              <legend class="feedback__legend feedback__legend--contacts">Контактная информация:</legend>
-              <label class="feedback__field feedback__field--contacts" for="phone">Контактный телефон*:
-                <input class="feedback__input feedback__input--contacts" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-              </label>
-              <label class="feedback__field feedback__field--contacts" for="email">Электронная почта*:
-                <input class="feedback__input feedback__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-              </label>
-            </fieldset>
+              <fieldset class="feedback__item feedback__item--contacts">
+                <legend class="feedback__legend feedback__legend--contacts">Контактная информация:</legend>
+                <label class="feedback__field feedback__field--contacts" for="phone">Контактный телефон*:
+                  <input class="feedback__input feedback__input--contacts" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                </label>
+                <label class="feedback__field feedback__field--contacts" for="email">Электронная почта*:
+                  <input class="feedback__input feedback__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                </label>
+              </fieldset>
+            </div>
 
             <fieldset class="feedback__item feedback__item--impression">
               <legend class="feedback__legend feedback__legend--impression">Ваше общее впечатление:</legend>

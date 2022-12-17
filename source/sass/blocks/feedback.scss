@@ -4,12 +4,20 @@
 .feedback__article {
   text-align: center;
   border-bottom: solid 1px $color-mercury;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .feedback__article-title {
   @include heading-font;
   margin: 0;
   padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .feedback__article-text {
@@ -17,6 +25,18 @@
   margin: 0;
   padding-top: 24px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+    margin: 0 auto;
+  }
+}
+
+.feedback-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .feedback__item {
@@ -30,17 +50,29 @@
   &--name {
     padding-bottom: 39px;
     border-bottom: solid 1px $color-mercury;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   &--contacts {
     padding-bottom: 34px;
     border-bottom: solid 1px $color-mercury;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   &--impression,
   &--sight {
     border-bottom: solid 1px $color-mercury;
     padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   &--submit {
@@ -48,6 +80,11 @@
     gap: 0;
     padding-top: 56px;
     padding-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -56,6 +93,12 @@
   text-align: center;
   padding-top: 24px;
   padding-bottom: 20px;
+
+  &--sight {
+    @media (min-width: $tablet-width) {
+      width: 308px;
+    }
+  }
 }
 
 .feedback__field {
@@ -113,6 +156,10 @@
   }
 }
 
+.textarea {
+  margin: 0 auto;
+}
+
 .textarea__input {
   @include heading-font;
   border: none;
@@ -127,6 +174,11 @@
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 616px;
+    min-height: 128px;
+  }
 }
 
 .feedback__submit-button {
@@ -135,6 +187,14 @@
   background-color: $color-sedona-blue;
   padding: 16px 0;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 101px;
+  }
 }
 
 .feedback__note {

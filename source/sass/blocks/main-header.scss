@@ -24,3 +24,9 @@
   background-position: center;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header__nav-toggle {
+    display: none;
+  }
+}

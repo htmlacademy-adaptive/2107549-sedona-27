@@ -1,15 +1,24 @@
 @import "../general/mixins.scss";
 @import "../general/variables.scss";
 
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .advantages__item {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
 
   &--space,
   &--road,
   &--tourists {
     background-color: $color-gallery;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
   }
 }
 
@@ -24,6 +33,10 @@
     text-align: center;
     margin: 0;
     padding-top: 54px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 37px;
+    }
   }
 
   &--bridge {
@@ -31,6 +44,12 @@
     text-align: center;
     margin: 0;
     padding-top: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -88,6 +107,11 @@
 
   &--real-city {
     color: $color-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    margin: 0 auto;
   }
 }
 
