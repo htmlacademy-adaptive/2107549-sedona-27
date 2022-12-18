@@ -7,20 +7,7 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 320px;
   background-color: $color-concrete;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-
-    .page__wrapper {
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    }
-  }
 }
 
 .visually-hidden {

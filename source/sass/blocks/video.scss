@@ -5,35 +5,6 @@
   text-align: center;
 }
 
-.page-article-video__title {
-  @include heading-font;
-  margin: 0;
-  padding-top: 25px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-    padding-top: 57px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 30px;
-    padding-top: 62px;
-  }
-}
-
-.page-article-video__text {
-  @include basic-font;
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 38px;
-
-  @media (min-width: $tablet-width) {
-    width: 445px;
-    margin: 0 auto;
-    padding-bottom: 65px;
-  }
-}
-
 .video__player {
   text-align: center;
 }
