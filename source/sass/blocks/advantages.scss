@@ -147,6 +147,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 }
 
 .advantages__item-with-photo {
@@ -156,6 +160,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     width: 100%;
+  }
+}
+
+.advantages__item-with-bridge-photo {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
   }
 }
 
