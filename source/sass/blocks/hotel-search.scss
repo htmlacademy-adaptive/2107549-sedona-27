@@ -37,7 +37,7 @@
   }
 }
 
-.hotel-search__map {
+.hotel-search__map-wrapper {
   margin-top: 49px;
   background-image: url("../../img/map-mobile.png");
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@
   }
 }
 
-.map {
+.hotel-search__map {
   @media (min-width: $tablet-width) {
     width: 768px;
   }

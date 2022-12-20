@@ -62,11 +62,11 @@
   }
 }
 
-.advantages-text-wrapper {
+.advantages__wrapper {
   margin: 0 auto;
 }
 
-.sedona-city-photo {
+.advantages__sedona-city-photo {
   object-fit: cover;
   height: 260px;
 
@@ -79,7 +79,7 @@
   }
 }
 
-.sedona-bridge-photo {
+.advantages__sedona-bridge-photo {
   object-fit: cover;
   height: 260px;
 
@@ -167,30 +167,4 @@
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
   }
-}
-
-.advantages__sublist {
-  background-color: $color-white;
-  color: $color-black;
-  padding-top: 36px;
-  padding-bottom: 46px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    width: 100%;
-  }
-}
-
-.sublist__item-title {
-  @include heading-font;
-}
-
-.sublist__item-description {
-  @include basic-font;
-  padding-top: 16px;
-  color: $color-mine-shaft;
-}
-
-.sublist__item--food {
-  padding: 25px 0;
 }

@@ -1,0 +1,9 @@
+@import "../general/variables.scss";
+
+.sedona-logo {
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+    margin: 70px 0;
+  }
+}

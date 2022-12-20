@@ -26,13 +26,3 @@
   margin: 0;
   padding-bottom: 22px;
 }
-
-.developed-by__link {
-  @include basic-font;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  margin: 0;
-  gap: 6px;
-  color: $color-black;
-}
