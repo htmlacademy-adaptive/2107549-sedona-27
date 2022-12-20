@@ -1,18 +1,13 @@
 @import "./mixins.scss";
 @import "./variables.scss";
 
-html,
-body {
-  margin: 0;
-}
-
 html {
   height: 100%;
 }
 
 body {
-  @include mobile-view-centered();
-  background-color: $color-mercury;
+  margin: 0 auto;
+  background-color: $color-concrete;
 }
 
 .visually-hidden {

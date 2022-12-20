@@ -1,0 +1,27 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.textarea {
+  margin: 0 auto;
+}
+
+.textarea__input {
+  @include heading-font;
+  border: none;
+  outline: none;
+  text-transform: none;
+  resize: none;
+  background-color: $color-concrete;
+  padding: 16px;
+  min-width: 247px;
+  min-height: 118px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 616px;
+    min-height: 128px;
+  }
+}

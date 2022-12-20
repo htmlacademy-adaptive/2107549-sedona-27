@@ -4,59 +4,34 @@
 .gallery__heading {
   text-align: center;
   border-bottom: solid 1px $color-mercury;
-}
 
-.page-article__title {
-  @include heading-font;
-  margin: 0;
-  padding-top: 33px;
-}
-
-.page-article__text {
-  @include basic-font;
-  color: $color-mine-shaft;
-  margin: 0;
-  padding-top: 37px;
-  padding-bottom: 47px;
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .gallery__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
-.gallery-card {
-  display: flex;
-  flex-direction: column;
-  padding: 24px 20px;
-  border-bottom: solid 1px $color-mercury;
-}
+.gallery__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: min-content;
 
-.gallery-card__image {
-  object-fit: cover;
-  height: 280px;
-  width: 280px;
-}
-
-.gallery-card__name {
-  @include basic-font;
-  font-weight: 700;
-  margin: 0;
-  padding-top: 12px;
-}
-
-.gallery-card__author {
-  @include basic-font;
-  text-transform: none;
-  margin: 0;
-  padding-top: 5px;
-}
-
-.gallery-card__likes {
-  @include basic-font;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding-top: 16px;
-  font-weight: 700;
+    &:nth-child(3) {
+      .gallery-card__description {
+        background-color: #eaeaea;
+      }
+    }
+  }
 }

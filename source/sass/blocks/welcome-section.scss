@@ -18,3 +18,10 @@
     padding-bottom: 67px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .welcome-section__logo {
+    width: 461px;
+    height: 350px;
+  }
+}

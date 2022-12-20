@@ -1,15 +1,33 @@
 @import "../general/mixins.scss";
 @import "../general/variables.scss";
 
+.advantages__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .advantages__item {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
 
   &--space,
   &--road,
   &--tourists {
     background-color: $color-gallery;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
   }
 }
 
@@ -24,6 +42,10 @@
     text-align: center;
     margin: 0;
     padding-top: 54px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 37px;
+    }
   }
 
   &--bridge {
@@ -32,16 +54,42 @@
     margin: 0;
     padding-top: 37px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
-.sedona-city-photo {
-  object-fit: cover;
-  height: 260px;
+.advantages__wrapper {
+  margin: 0 auto;
 }
 
-.sedona-bridge-photo {
+.advantages__sedona-city-photo {
   object-fit: cover;
   height: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.advantages__sedona-bridge-photo {
+  object-fit: cover;
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .advantages__number {
@@ -89,30 +137,34 @@
   &--real-city {
     color: $color-white;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    margin: 0 auto;
+
+    &--space::after,
+    &--road::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 }
 
 .advantages__item-with-photo {
   background-color: $color-sedona-blue;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
 }
 
-.advantages__sublist {
-  background-color: $color-white;
-  color: $color-black;
-  padding-top: 36px;
-  padding-bottom: 46px;
-}
-
-.sublist__item-title {
-  @include heading-font;
-}
-
-.sublist__item-description {
-  @include basic-font;
-  padding-top: 16px;
-  color: $color-mine-shaft;
-}
-
-.sublist__item--food {
-  padding: 25px 0;
+.advantages__item-with-bridge-photo {
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+  }
 }

@@ -1,0 +1,12 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.developed-by__link {
+  @include basic-font;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+  gap: 6px;
+  color: $color-black;
+}
