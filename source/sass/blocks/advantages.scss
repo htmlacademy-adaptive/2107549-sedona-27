@@ -4,6 +4,7 @@
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -18,7 +19,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
   }
 }
 
@@ -51,6 +60,10 @@
     text-align: center;
     margin: 0 auto;
   }
+}
+
+.advantages-text-wrapper {
+  margin: 0 auto;
 }
 
 .sedona-city-photo {
@@ -112,12 +125,22 @@
   @media (min-width: $tablet-width) {
     width: 190px;
     margin: 0 auto;
+
+    &--space::after,
+    &--road::after {
+      display: none;
+    }
   }
 }
 
 .advantages__item-with-photo {
   background-color: $color-sedona-blue;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .advantages__sublist {
@@ -125,6 +148,11 @@
   color: $color-black;
   padding-top: 36px;
   padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .sublist__item-title {
