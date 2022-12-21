@@ -46,6 +46,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 37px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
+    }
   }
 
   &--bridge {
@@ -53,6 +57,10 @@
     text-align: center;
     margin: 0;
     padding-top: 37px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -96,7 +104,7 @@
   @include basic-font;
   text-align: center;
   margin: 0;
-  padding-top: 17px;
+  padding-top: 10px;
   padding-bottom: 17px;
   color: $color-mine-shaft;
 

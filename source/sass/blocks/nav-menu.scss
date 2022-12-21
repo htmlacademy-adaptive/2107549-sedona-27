@@ -22,6 +22,14 @@
   flex-direction: column;
   background-color: $color-sedona-blue;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   &--first::after {
     position: absolute;
     padding: 0;
@@ -35,6 +43,14 @@
     background-position: center;
     cursor: pointer;
     content: "";
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--second {
@@ -61,4 +77,8 @@
   text-decoration: none;
   color: $color-white;
   text-align: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
