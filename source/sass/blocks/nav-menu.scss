@@ -6,8 +6,10 @@
   top: 0;
   right: 0;
 
-  &--closed {
-    display: none; // скрывает меню
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    &--closed {
+      display: none; // скрывает меню
+    }
   }
 }
 
@@ -32,11 +34,20 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav-menu__list {
   font-family: $font;
   background-color: #5b90ab;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    background-color: $color-white;
+  }
 }
 
 .nav-menu__item {
@@ -54,6 +65,17 @@
 
   &:active {
     background-color: #5496bd;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 153px;
+    background-color: $color-white;
+    outline: 3px solid red;
+
+    &:hover,
+    &:active {
+      background-color: $color-white;
+    }
   }
 
   &--second {
@@ -83,5 +105,23 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include basic-font;
+    font-weight: 700;
+    color: $color-black;
+
+    &:hover {
+      color: $color-sedona-blue;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      color: #766357;
+    }
   }
 }
