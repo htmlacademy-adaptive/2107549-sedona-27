@@ -31,6 +31,15 @@
   padding: 16px 0;
   margin: 0 18px;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 458px;
     margin: 0 auto;

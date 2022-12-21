@@ -2,10 +2,36 @@
 @import "../general/variables.scss";
 
 .nav-menu {
-  display: none; // скрывает меню
   position: absolute;
   top: 0;
   right: 0;
+
+  &--closed {
+    display: none; // скрывает меню
+  }
+}
+
+.nav-menu__close-toggle {
+  position: absolute;
+  padding: 0;
+  top: 17px;
+  left: 278px;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-image: url("../../img/icon-cross.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav-menu__list {
@@ -28,29 +54,6 @@
 
   &:active {
     background-color: #5496bd;
-  }
-
-  &--first::after {
-    position: absolute;
-    padding: 0;
-    top: 17px;
-    left: 278px;
-    width: 23px;
-    height: 23px;
-    border: none;
-    background-image: url("../../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    content: "";
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   &--second {
