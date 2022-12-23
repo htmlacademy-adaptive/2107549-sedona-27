@@ -46,7 +46,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 768px;
     background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
@@ -70,12 +75,15 @@
   @media (min-width: $tablet-width) {
     min-width: 153px;
     background-color: $color-white;
-    outline: 3px solid #ff7300;
 
     &:hover,
     &:active {
       background-color: $color-white;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 240px;
   }
 
   &--second {
