@@ -24,4 +24,9 @@
     min-width: 616px;
     min-height: 128px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 736px;
+    min-height: 128px;
+  }
 }

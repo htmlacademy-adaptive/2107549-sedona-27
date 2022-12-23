@@ -84,39 +84,43 @@
 
             <fieldset class="feedback__item feedback__item--impression">
               <legend class="feedback__legend feedback__legend--impression">Ваше общее впечатление:</legend>
-              <label class="feedback__field feedback__field--impression radio-button">
-                <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>Скорее положительное
-              </label>
-              <label class="feedback__field feedback__field--impression radio-button">
-                <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">Скорее отрицательное
-              </label>
-              <label class="feedback__field feedback__field--impression radio-button">
-                <input class="radio-button__input visually-hidden" type="radio" name="impression" value="idk">Затрудняюсь ответить
-              </label>
+              <div class="radio-list-wrapper">
+                <label class="feedback__field feedback__field--impression radio-button">
+                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>Скорее положительное
+                </label>
+                <label class="feedback__field feedback__field--impression radio-button">
+                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">Скорее отрицательное
+                </label>
+                <label class="feedback__field feedback__field--impression radio-button">
+                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="idk">Затрудняюсь ответить
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="feedback__item feedback__item--sight">
               <legend class="feedback__legend feedback__legend--sight">Посещенные достопримечательности:</legend>
-              <label class="feedback__field feedback__field--sight checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="bridge" checked>
-                <span class="checkbox__label">Мост Дьявола</span>
-              </label>
-              <label class="feedback__field feedback__field--sight checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="mountain" checked>
-                <span class="checkbox__label">Гора-Колокол</span>
-              </label>
-              <label class="feedback__field feedback__field--sight checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="park" checked>
-                <span class="checkbox__label">Слайд-парк</span>
-              </label>
-              <label class="feedback__field feedback__field--sight checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="rocks">
-                <span class="checkbox__label">Красные скалы</span>
-              </label>
+              <div class="checkbox-list-wrapper">
+                <label class="feedback__field feedback__field--sight checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="bridge" checked>
+                  <span class="checkbox__label">Мост Дьявола</span>
+                </label>
+                <label class="feedback__field feedback__field--sight checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="mountain" checked>
+                  <span class="checkbox__label">Гора-Колокол</span>
+                </label>
+                <label class="feedback__field feedback__field--sight checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="park" checked>
+                  <span class="checkbox__label">Слайд-парк</span>
+                </label>
+                <label class="feedback__field feedback__field--sight checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="rocks">
+                  <span class="checkbox__label">Красные скалы</span>
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="feedback__item feedback__item--emotions">
-              <legend class="feedback__legend">Опишите свои эмоции:</legend>
+              <legend class="feedback__legend feedback__legend--emotions">Опишите свои эмоции:</legend>
               <label class="feedback__field textarea">
                 <textarea class="textarea__input" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
