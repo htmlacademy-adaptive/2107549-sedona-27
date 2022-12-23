@@ -49,10 +49,6 @@
     justify-content: space-between;
     width: 768px;
     background-color: $color-white;
-
-    .list__wrapper {
-      display: flex;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +71,13 @@
 
   &:active {
     background-color: #5496bd;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    &--empty {
+      display: none;
+    }
+
   }
 
   @media (min-width: $tablet-width) {
