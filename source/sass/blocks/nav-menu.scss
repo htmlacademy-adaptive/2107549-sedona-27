@@ -46,8 +46,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
     width: 768px;
     background-color: $color-white;
+
+    .list__wrapper {
+      display: flex;
+    }
   }
 
   @media (min-width: $desktop-width) {
