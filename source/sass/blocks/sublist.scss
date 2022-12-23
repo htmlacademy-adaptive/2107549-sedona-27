@@ -6,25 +6,61 @@
   color: $color-black;
   padding-top: 36px;
   padding-bottom: 46px;
+  padding-left: 65px;
+  padding-right: 18px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: 100%;
+    padding: 0;
+  }
+}
+
+.sublist__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    align-items: center;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 
 .sublist__item-title {
   @include heading-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 0;
+    margin-top: 160px;
+  }
 }
 
 .sublist__item-description {
   @include basic-font;
   padding-top: 16px;
   color: $color-mine-shaft;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 65px;
+    width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
 }
 
 .sublist__item--food {
   padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
