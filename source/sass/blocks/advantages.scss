@@ -68,6 +68,21 @@
     text-align: center;
     margin: 0 auto;
     font-size: 21px;
+
+    &--space,
+    &--tourists {
+      padding-top: 53px;
+    }
+
+    &--road {
+      padding-top: 43px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--road {
+      padding-top: 53px;
+    }
   }
 }
 
@@ -156,6 +171,10 @@
     &--space::after,
     &--road::after {
       display: none;
+    }
+
+    &--space {
+      padding-bottom: 52px;
     }
   }
 

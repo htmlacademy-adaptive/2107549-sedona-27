@@ -17,6 +17,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
   }
 }
 
