@@ -26,3 +26,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  br {
+    display: none;
+  }
+}
+
+.breakpoint-desktop {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}

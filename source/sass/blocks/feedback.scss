@@ -17,6 +17,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 115px;
   }
 }
 
@@ -36,6 +41,47 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
+    padding-top: 30px;
+  }
+}
+
+.feedback__radio-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+.feedback__checkbox-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
   }
 }
 
@@ -84,6 +130,15 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 216px;
+      padding-right: 216px;
     }
   }
 }
@@ -94,9 +149,19 @@
   padding-top: 24px;
   padding-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
   &--sight {
     @media (min-width: $tablet-width) {
       width: 308px;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: $desktop-width) {
+      padding-top: 50px;
     }
   }
 }
@@ -107,6 +172,8 @@
     display: flex;
     flex-direction: column;
     color: $color-mine-shaft;
+    padding-left: 16px;
+    gap: 2px;
   }
 
   &--contacts {
@@ -114,12 +181,15 @@
     display: flex;
     flex-direction: column;
     color: $color-mine-shaft;
+    padding-left: 16px;
+    gap: 2px;
   }
 
   &--impression,
   &--sight {
     @include heading-font;
     text-transform: none;
+    padding: 12px 0;
   }
 }
 
@@ -132,6 +202,7 @@
     border: none;
     margin: 0;
     padding: 16px;
+    margin-left: -16px;
   }
 
   &--contacts {
@@ -142,10 +213,7 @@
     border: none;
     margin: 0;
     padding: 16px;
-  }
-
-  &--contacts::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    margin-left: -16px;
   }
 
   &--contacts::after { // -- тут почему-то не работает. что добавить?
@@ -153,6 +221,25 @@
     width: 58px;
     height: 58px;
     content: "";
+  }
+
+  &--contacts::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-white;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
   }
 }
 
@@ -162,6 +249,15 @@
   background-color: $color-sedona-blue;
   padding: 16px 0;
   border: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 16px 71px;

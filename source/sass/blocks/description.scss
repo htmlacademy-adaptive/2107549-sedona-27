@@ -9,6 +9,11 @@
   @media (min-width: $tablet-width) {
     width: 520px;
     margin: 47px auto 0;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 59px auto 0;
   }
 }
 
@@ -17,8 +22,14 @@
   text-align: center;
   color: $color-mine-shaft;
   margin-top: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin-top: 30px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
   }
 }

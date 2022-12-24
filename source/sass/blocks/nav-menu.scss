@@ -2,15 +2,58 @@
 @import "../general/variables.scss";
 
 .nav-menu {
-  display: none; // скрывает меню
   position: absolute;
   top: 0;
   right: 0;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    &--closed {
+      display: none;
+    }
+  }
+}
+
+.nav-menu__close-toggle {
+  position: absolute;
+  padding: 0;
+  top: 17px;
+  left: 278px;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-image: url("../../img/icon-cross.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav-menu__list {
   font-family: $font;
   background-color: #5b90ab;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .nav-menu__item {
@@ -22,37 +65,80 @@
   flex-direction: column;
   background-color: $color-sedona-blue;
 
-  &--first::after {
-    position: absolute;
-    padding: 0;
-    top: 17px;
-    left: 278px;
-    width: 23px;
-    height: 23px;
-    border: none;
-    background-image: url("../../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    content: "";
+  &:hover {
+    background-color: #669ec0;
   }
 
-  &--second {
+  &:active {
+    background-color: #5496bd;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    &--empty {
+      display: none;
+    }
+
+    &:last-child {
+      position: relative;
+    }
+
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 7px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 153px;
+    background-color: $color-white;
+
+    &:hover,
+    &:active {
+      background-color: $color-white;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 240px;
+  }
+
+  &--catalog {
+    margin-top: 1px;
+    border-top: solid 1px #8fc2de;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    @media (min-width: $tablet-width) {
+      margin-right: 153px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 240px;
+    }
+  }
+
+  &--form {
     margin-top: 1px;
     border-top: solid 1px #8fc2de;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
-  &--third {
+  &--academy {
     margin-top: 1px;
     border-top: solid 1px #8fc2de;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
-  &--fourth {
-    margin-top: 1px;
-    border-top: solid 1px #8fc2de;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  &--catalog,
+  &--form,
+  &--academy {
+    @media (min-width: $tablet-width) {
+      border-top: none;
+      box-shadow: none;
+    }
   }
 }
 
@@ -61,4 +147,26 @@
   text-decoration: none;
   color: $color-white;
   text-align: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include basic-font;
+    font-weight: 700;
+    color: $color-black;
+
+    &:hover {
+      color: $color-sedona-blue;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      color: #766357;
+    }
+  }
 }

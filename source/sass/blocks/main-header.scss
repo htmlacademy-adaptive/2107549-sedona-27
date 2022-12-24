@@ -9,6 +9,10 @@
 
 .main-header__logo {
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+  }
 }
 
 .main-header__nav-toggle {
@@ -17,17 +21,25 @@
   top: 14px;
   left: 129px;
   width: 22px;
-  height: 22px;
+  height: 24px;
   border: none;
   background-image: url("../../img/menu-icon.svg");
   background-color: $color-white;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-header__nav-toggle {
-    display: none;
+    visibility: hidden;
   }
 }

@@ -44,7 +44,11 @@
     padding-top: 54px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 37px;
+      padding-top: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
     }
   }
 
@@ -53,12 +57,32 @@
     text-align: center;
     margin: 0;
     padding-top: 37px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 52px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 180px;
     text-align: center;
     margin: 0 auto;
+    font-size: 21px;
+
+    &--space,
+    &--tourists {
+      padding-top: 53px;
+    }
+
+    &--road {
+      padding-top: 43px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--road {
+      padding-top: 53px;
+    }
   }
 }
 
@@ -89,6 +113,7 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    object-position: 50% -14px;
   }
 }
 
@@ -96,8 +121,8 @@
   @include basic-font;
   text-align: center;
   margin: 0;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   color: $color-mine-shaft;
 
   &--real-city {
@@ -141,10 +166,15 @@
   @media (min-width: $tablet-width) {
     width: 190px;
     margin: 0 auto;
+    padding: 0;
 
     &--space::after,
     &--road::after {
       display: none;
+    }
+
+    &--space {
+      padding-bottom: 52px;
     }
   }
 
