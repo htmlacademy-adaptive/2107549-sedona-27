@@ -17,6 +17,10 @@
   }
 }
 
+.gallery-card img {
+  display: block;
+}
+
 .gallery-card__description {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -27,34 +31,6 @@
   @media (min-width: $desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
     margin-top: -83px;
-  }
-}
-
-.gallery-card__image {
-  display: block;
-  object-fit: cover;
-  height: 280px;
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    height: 267px;
-    width: 324px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 267px;
-    width: 400px;
-  }
-
-  &--large {
-    @media (min-width: $tablet-width) {
-      height: 400px;
-      width: 648px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1200px;
-    }
   }
 }
 
