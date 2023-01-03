@@ -1,0 +1,131 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 320px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+
+  display: none; /* скрывает модалки и overlay */
+}
+
+.modal__failure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto 0;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 184px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 400px;
+  }
+
+  display: none; /* скрывает modal__failure */
+}
+
+.modal__success {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto 0;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 280px;
+  }
+
+  display: none; /* скрывает modal__success */
+}
+
+.modal__header {
+  @include heading-font;
+  text-align: center;
+  margin: 0;
+  padding-top: 45px;
+
+  &--success {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 50px;
+    width: 211px;
+    margin: 0 auto;
+
+    &--success {
+      width: 444px;
+    }
+  }
+}
+
+.modal__text {
+  @include basic-font;
+  text-align: center;
+  width: 237px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 307px;
+
+    &--success {
+      width: 444px;
+    }
+  }
+}
+
+.modal__button {
+  @include heading-font;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-sedona-blue;
+  padding: 16px 0;
+  margin: 30px 70px 35px;
+  border: none;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--success {
+    margin: 75px 20px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 50px 64px 49px;
+
+    &--success {
+      margin: 102px 91px 44px;
+    }
+  }
+}

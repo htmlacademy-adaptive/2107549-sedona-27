@@ -126,7 +126,7 @@
               </label>
             </fieldset>
             <div class="feedback__item feedback__item--submit">
-              <button class="feedback__submit-button button" type="submit">Отправить отзыв</button>
+              <button class="feedback__submit-button" type="submit">Отправить отзыв</button>
               <span class="feedback__note">* — обязательные поля</span>
             </div>
           </form>
@@ -161,6 +161,20 @@
           </a>
         </div>
       </footer>
+
+      <div class="modal">
+        <div class="modal__failure">
+          <h2 class="modal__header">Что-то пошло не так!</h2>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <a class="modal__button" href="#">Ок</a>
+        </div>
+
+        <div class="modal__success">
+          <h2 class="modal__header modal__header--success">Ваш отзыв отправлен!</h2>
+          <p class="modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <a class="modal__button modal__button--success" href="#">Закрыть окно</a>
+        </div>
+      </div>
     </div>
   <script src="./js/script.js"></script>
   </body>
