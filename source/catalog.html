@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона | Фото и видео</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -55,7 +59,11 @@
           <ul class="gallery__list list">
             <li class="gallery__item gallery-card">
               <a href="#">
-                <img class="gallery-card__image gallery-card__image--large" src="img/prostory-photo.jpg" alt="Неродные просторы.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/prostory-photo-desktop.jpg 1x, img/prostory-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/prostory-photo-tablet.jpg 1x, img/prostory-photo-tablet@2x.jpg 2x">
+                  <img src="img/prostory-photo.jpg" srcset="img/prostory-photo@2x 2x" alt="Неродные просторы.">
+                </picture>
               </a>
               <div class="gallery-card__description">
                 <div class="gallery-card__content">
@@ -72,7 +80,11 @@
 
             <li class="gallery__item gallery-card">
               <a href="#">
-                <img class="gallery-card__image" src="img/rastitelnost-photo.jpg" alt="Местная растительность.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/rastitelnost-photo-desktop.jpg 1x, img/rastitelnost-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/rastitelnost-photo-tablet.jpg 1x, img/rastitelnost-photo-tablet@2x.jpg 2x">
+                  <img src="img/rastitelnost-photo.jpg" srcset="img/rastitelnost-photo@2x 2x" alt="Неродные просторы.">
+                </picture>
               </a>
               <div class="gallery-card__description">
                 <div class="gallery-card__content">
@@ -88,7 +100,11 @@
             </li>
             <li class="gallery__item gallery-card">
               <a href="#">
-                <img class="gallery-card__image" src="img/north-road-photo.jpg" alt="Дорога на север.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/north-road-photo-desktop.jpg 1x, img/north-road-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/north-road-photo-tablet.jpg 1x, img/north-road-photo-tablet@2x.jpg 2x">
+                  <img src="img/north-road-photo.jpg" srcset="img/north-road-photo@2x 2x" alt="Неродные просторы.">
+                </picture>
               </a>
               <div class="gallery-card__description">
                 <div class="gallery-card__content">
@@ -105,7 +121,11 @@
 
             <li class="gallery__item gallery-card">
               <a href="#">
-                <img class="gallery-card__image" src="img/sedona-bridge-gallery.jpg" alt="Мост дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/sedona-bridge-gallery-desktop.jpg 1x, img/sedona-bridge-gallery-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/sedona-bridge-gallery-tablet.jpg 1x, img/sedona-bridge-gallery-tablet@2x.jpg 2x">
+                  <img src="img/sedona-bridge-gallery.jpg" srcset="img/sedona-bridge-gallery@2x 2x" alt="Неродные просторы.">
+                </picture>
               </a>
               <div class="gallery-card__description">
                 <div class="gallery-card__content">
@@ -129,7 +149,7 @@
           </div>
 
           <div class="video__player">
-            <img class="video__player-splash-screen" width="280" height="177" src="img/video-desktop.jpg" alt="Видеопрезентация туристического города Седона.">
+            <img class="video__player-splash-screen" width="280" height="177" src="img/video-desktop.jpg" srcset="img/video-desktop@2x 2x" alt="Видеопрезентация туристического города Седона.">
           </div>
         </section>
       </main>
@@ -163,6 +183,6 @@
         </div>
       </footer>
     </div>
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
   </body>
 </html>

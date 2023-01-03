@@ -12,7 +12,11 @@
   background-size: cover;
   background-color: $color-mine-shaft;
 
-  &--catalog, // тут не пойму как подогнать bg изображение под нужный размер как в макете
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-sedona-picture@2x.jpg");
+  }
+
+  &--catalog,
   &--form {
     padding-top: 52px;
     padding-bottom: 67px;
