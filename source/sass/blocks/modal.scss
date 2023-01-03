@@ -118,14 +118,22 @@
   }
 
   &--success {
-    margin: 75px 20px 20px;
+    margin: 20px 0 20px;
+    padding: 16px 78px;
   }
 
   @media (min-width: $tablet-width) {
     margin: 50px 64px 49px;
 
     &--success {
-      margin: 102px 91px 44px;
+      padding: 16px 156px;
     }
   }
+}
+
+.modal__button-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: $color-concrete;
+  margin-top: 55px;
 }
