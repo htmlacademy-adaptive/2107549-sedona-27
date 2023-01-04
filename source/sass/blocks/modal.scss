@@ -95,21 +95,8 @@
 .modal__button {
   @include heading-font;
   text-align: center;
-  color: $color-white;
-  background-color: $color-sedona-blue;
   padding: 16px 0;
   margin: 30px 70px 35px;
-  border: none;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
-  }
 
   &--success {
     margin: 20px 0 20px;

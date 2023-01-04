@@ -245,19 +245,7 @@
 
 .feedback__submit-button {
   @include heading-big-font;
-  color: $color-white;
-  background-color: $color-sedona-blue;
   padding: 16px 0;
-  border: none;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
-  }
 
   @media (min-width: $tablet-width) {
     padding: 16px 71px;
