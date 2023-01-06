@@ -213,14 +213,9 @@
     border: none;
     margin: 0;
     padding: 16px;
+    padding-right: 0;
     margin-left: -16px;
-  }
-
-  &--contacts::after { // -- тут почему-то не работает. что добавить?
-    background: $color-whisper;
-    width: 58px;
-    height: 58px;
-    content: "";
+    border-right: 58px solid $color-whisper;
   }
 
   &--contacts::placeholder {

@@ -1,0 +1,27 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.social__icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  fill: $color-white;
+  background-color: $color-sedona-blue;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active{
+    background-color: #5496bd;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}

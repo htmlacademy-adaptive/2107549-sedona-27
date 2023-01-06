@@ -9,4 +9,20 @@
   margin: 0;
   gap: 6px;
   color: $color-black;
+
+  &:hover {
+    color: $color-sedona-blue;
+    fill: $color-sedona-blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+}
+
+.developed-by__icon {
+  display: block;
+  width: 27px;
+  height: 34px;
 }
