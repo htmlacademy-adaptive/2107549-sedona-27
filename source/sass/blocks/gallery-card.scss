@@ -72,17 +72,42 @@
 .gallery-card__likes {
   @include basic-font;
   display: flex;
-  align-items: center;
-  gap: 14px;
+  gap: 2px;
   padding-top: 16px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-right: 20px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     color: $color-white;
+  }
+}
+
+.gallery-card__likes-button {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.gallery-card__like-icon {
+  display: block;
+  width: 23px;
+  height: 21px;
+  fill: $color-black;
+  opacity: 0.3;
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $color-white;
+    opacity: 1;
   }
 }
