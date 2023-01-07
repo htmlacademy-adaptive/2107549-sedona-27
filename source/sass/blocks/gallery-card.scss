@@ -109,5 +109,9 @@
   @media (min-width: $desktop-width) {
     fill: $color-white;
     opacity: 1;
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
