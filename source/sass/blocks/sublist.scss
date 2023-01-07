@@ -4,9 +4,8 @@
 .sublist {
   background-color: $color-white;
   color: $color-black;
-  padding-top: 36px;
+  padding-top: 10px;
   padding-bottom: 46px;
-  padding-left: 65px;
   padding-right: 18px;
 
   @media (min-width: $tablet-width) {
@@ -17,6 +16,10 @@
 }
 
 .sublist__item {
+  &--gifts {
+    padding-left: 7px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -31,18 +34,93 @@
 
 .sublist__item-title {
   @include heading-font;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--accomodation {
+    gap: 10px;
+
+    @media (min-width: $tablet-width) {
+      gap: 30px;
+      padding-top: 60px;
+    }
+
+    &::before {
+      content: url("../../img/home-icon.svg");
+      width: 39px;
+      height: 37px;
+
+      @media (min-width: $tablet-width) {
+        content: url(../../img/home-icon--tablet.svg);
+        width: 77px;
+        height: 72px;
+      }
+    }
+  }
+
+  &--food {
+    gap: 8px;
+
+    @media (min-width: $tablet-width) {
+      gap: 30px;
+      padding-top: 60px;
+    }
+
+    &::before {
+      content: url("../../img/food-icon.svg");
+      width: 40px;
+      height: 35px;
+
+      @media (min-width: $tablet-width) {
+        content: url(../../img/food-icon--tablet.svg);
+        width: 77px;
+        height: 72px;
+      }
+    }
+  }
+
+  &--gifts {
+    gap: 9px;
+
+    @media (min-width: $tablet-width) {
+      gap: 30px;
+      padding-top: 60px;
+    }
+
+    &::before {
+      content: url("../../img/gift-icon.svg");
+      width: 32px;
+      height: 38px;
+
+      @media (min-width: $tablet-width) {
+        content: url(../../img/gift-icon--tablet.svg);
+        width: 77px;
+        height: 72px;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin: 0;
-    margin-top: 160px;
   }
 }
 
 .sublist__item-description {
   @include basic-font;
-  padding-top: 16px;
+  padding-left: 66px;
   color: $color-mine-shaft;
+  margin: 0;
+
+  &--gifts {
+    padding-left: 59px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
