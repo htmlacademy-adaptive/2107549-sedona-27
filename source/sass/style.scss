@@ -1,12 +1,12 @@
 // general
 @import "./general/base.scss";
-@import "./general/page.scss";
 @import "./general/fonts.scss";
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
-@import "./general/button.scss";
 
 // blocks
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/welcome-section.scss";
 @import "./blocks/sedona-logo.scss";

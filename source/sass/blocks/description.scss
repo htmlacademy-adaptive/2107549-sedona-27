@@ -33,3 +33,14 @@
     margin-bottom: 44px;
   }
 }
+
+.description__triangle {
+  position: absolute;
+  top: 650px;
+  width: 320px;
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
