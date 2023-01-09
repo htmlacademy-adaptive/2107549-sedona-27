@@ -17,16 +17,17 @@
 
 .sublist__item {
   &--gifts {
-    padding-left: 7px;
+    padding-left: 4px;
+    margin-top: -21px;
   }
 
   &--food {
     margin-top: -17px;
-  }
+    padding: 25px 0;
 
-  &--gifts {
-    margin-top: -21px;
-    padding-left: 4px;
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -171,13 +172,5 @@
   @media (min-width: $desktop-width) {
     width: 300px;
     margin-bottom: 69px;
-  }
-}
-
-.sublist__item--food {
-  padding: 25px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }
