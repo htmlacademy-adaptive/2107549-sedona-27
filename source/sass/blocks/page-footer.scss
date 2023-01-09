@@ -17,17 +17,17 @@
   text-align: center;
   text-decoration: none;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 34px;
   color: $color-black;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 60px;
-    padding: 0;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 119px;
-    padding: 0;
+    margin: 0 0 0 117px;
+    padding: 5px 0 0 0;
   }
 }
 
@@ -35,15 +35,17 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  padding-top: 9px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 70px 0 0;
+    margin: 0 77px 0 0;
     padding: 0;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 130px 0 0;
+    margin: 0 120px 0 0;
     padding: 0;
   }
 }

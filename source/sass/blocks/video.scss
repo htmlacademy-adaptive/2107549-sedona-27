@@ -11,6 +11,7 @@
 
 .video__player-splash-screen {
   object-fit: cover;
+  margin-bottom: -9px;
 
   @media (min-width: $tablet-width) {
     width: 648px;

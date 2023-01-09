@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 85px;
+  padding-top: 77px;
+  padding-bottom: 91px;
   background-image: url("../../img/background-sedona-picture.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -16,10 +16,19 @@
     background-image: url("../../img/background-sedona-picture@2x.jpg");
   }
 
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+
   &--catalog,
   &--form {
     padding-top: 52px;
     padding-bottom: 67px;
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 78px;
+    }
   }
 }
 
@@ -32,7 +41,7 @@
 
 .welcome-section__index-triangle {
   position: absolute;
-  top: 525px;
+  top: 518px;
   fill: $color-white;
 
   &--catalog {
@@ -53,7 +62,7 @@
 .welcome-section__form-triangle {
   position: absolute;
   fill: $color-white;
-  top: 337px;
+  top: 290px;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     top: 158px;
@@ -62,5 +71,9 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 301px;
   }
 }

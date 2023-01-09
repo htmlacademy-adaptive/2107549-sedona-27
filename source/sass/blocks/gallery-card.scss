@@ -4,7 +4,7 @@
 .gallery-card {
   display: flex;
   flex-direction: column;
-  padding: 24px 20px;
+  padding: 23px 20px;
   border-bottom: solid 1px $color-mercury;
 
   @media (min-width: $tablet-width) {
@@ -38,16 +38,16 @@
   @include basic-font;
   font-weight: 700;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 21px;
+    padding-top: 20px;
     padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
     color: $color-white;
-    padding-top: 20px;
+    padding-top: 22px;
     padding-left: 20px;
   }
 }
@@ -56,11 +56,11 @@
   @include basic-font;
   text-transform: none;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {

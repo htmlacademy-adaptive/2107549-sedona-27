@@ -4,7 +4,7 @@
 .page-article-video__title {
   @include heading-font;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -20,7 +20,7 @@
 .page-article-video__text {
   @include basic-font;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {

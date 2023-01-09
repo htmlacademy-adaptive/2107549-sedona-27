@@ -20,6 +20,15 @@
     padding-left: 7px;
   }
 
+  &--food {
+    margin-top: -17px;
+  }
+
+  &--gifts {
+    margin-top: -21px;
+    padding-left: 4px;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -44,11 +53,17 @@
   }
 
   &--accomodation {
-    gap: 10px;
+    gap: 9px;
+    margin-top: 11px;
+    margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
-      gap: 30px;
+      gap: 26px;
       padding-top: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 71px;
     }
 
     &::before {
@@ -66,10 +81,15 @@
 
   &--food {
     gap: 8px;
+    margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
-      gap: 30px;
-      padding-top: 60px;
+      gap: 24px;
+      padding-top: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 89px;
     }
 
     &::before {
@@ -82,15 +102,27 @@
         width: 77px;
         height: 72px;
       }
+
+      @media (min-width: $desktop-width) {
+        content: url("../../img/food-icon--desktop.svg");
+        width: 77px;
+        height: 72px;
+      }
     }
   }
 
   &--gifts {
-    gap: 9px;
+    gap: 11px;
+    margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
+      gap: 20px;
+      padding-top: 83px;
+    }
+
+    @media (min-width: $desktop-width) {
       gap: 30px;
-      padding-top: 60px;
+      padding-top: 90px;
     }
 
     &::before {
@@ -100,6 +132,12 @@
 
       @media (min-width: $tablet-width) {
         content: url("../../img/gift-icon--tablet.svg");
+        width: 77px;
+        height: 72px;
+      }
+
+      @media (min-width: $desktop-width) {
+        content: url("../../img/gift-icon--desktop.svg");
         width: 77px;
         height: 72px;
       }
@@ -119,19 +157,20 @@
   margin: 0;
 
   &--gifts {
-    padding-left: 59px;
+    padding-left: 61px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 65px;
+    margin-top: 22px;
+    margin-bottom: 61px;
     width: 190px;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
+    margin-bottom: 69px;
   }
 }
 

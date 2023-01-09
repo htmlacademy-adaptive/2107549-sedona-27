@@ -5,7 +5,7 @@
   @include heading-big-font;
   text-align: center;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -17,7 +17,7 @@
   @include basic-font;
   text-align: center;
   margin: 0;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +28,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 46px;
+    padding-top: 31px;
+    padding-bottom: 47px;
   }
 }
 

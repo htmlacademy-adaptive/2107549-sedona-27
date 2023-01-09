@@ -96,13 +96,19 @@
               <legend class="feedback__legend feedback__legend--impression">Ваше общее впечатление:</legend>
               <div class="feedback__radio-list">
                 <label class="feedback__field feedback__field--impression radio-button">
-                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>Скорее положительное
+                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>
+                  <span class="radio-button__mark"></span>
+                  <p class="radio-button__text">Скорее положительное</p>
                 </label>
                 <label class="feedback__field feedback__field--impression radio-button">
-                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">Скорее отрицательное
+                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">
+                  <span class="radio-button__mark"></span>
+                  <p class="radio-button__text">Скорее отрицательное</p>
                 </label>
                 <label class="feedback__field feedback__field--impression radio-button">
-                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="idk">Затрудняюсь ответить
+                  <input class="radio-button__input visually-hidden" type="radio" name="impression" value="idk">
+                  <span class="radio-button__mark"></span>
+                  <p class="radio-button__text">Затрудняюсь ответить</p>
                 </label>
               </div>
             </fieldset>
@@ -110,21 +116,25 @@
             <fieldset class="feedback__item feedback__item--sight">
               <legend class="feedback__legend feedback__legend--sight">Посещенные достопримечательности:</legend>
               <div class="feedback__checkbox-list">
-                <label class="feedback__field feedback__field--sight checkbox">
+                <label class="feedback__field feedback__field--sight feedback__field--sight-bridge checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="bridge" checked>
-                  <span class="checkbox__label">Мост Дьявола</span>
+                  <span class="checkbox__mark"></span>
+                  <p class="checkbox__text">Мост Дьявола</p>
                 </label>
-                <label class="feedback__field feedback__field--sight checkbox">
+                <label class="feedback__field feedback__field--sight feedback__field--sight-kolokol checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="mountain" checked>
-                  <span class="checkbox__label">Гора-Колокол</span>
+                  <span class="checkbox__mark"></span>
+                  <p class="checkbox__text">Гора-Колокол</p>
                 </label>
-                <label class="feedback__field feedback__field--sight checkbox">
+                <label class="feedback__field feedback__field--sight feedback__field--sight-slidepark checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="park" checked>
-                  <span class="checkbox__label">Слайд-парк</span>
+                  <span class="checkbox__mark"></span>
+                  <p class="checkbox__text">Слайд-парк</p>
                 </label>
-                <label class="feedback__field feedback__field--sight checkbox">
+                <label class="feedback__field feedback__field--sight feedback__field--sight-rocks checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="rocks">
-                  <span class="checkbox__label">Красные скалы</span>
+                  <span class="checkbox__mark"></span>
+                  <p class="checkbox__text">Красные скалы</p>
                 </label>
               </div>
             </fieldset>
@@ -175,7 +185,7 @@
 
         <div class="page-footer__developed-by developed-by">
           <a class="developed-by__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-            <svg class="developed-by__icon" width="27" height="34">
+            <svg class="developed-by__icon" width="27" height="35">
               <use href="./img/sprite.svg#copyright"></use>
             </svg>
             <span class="visually-hidden">Html Academy.</span>
