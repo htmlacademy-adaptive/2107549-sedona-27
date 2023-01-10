@@ -4,11 +4,12 @@
 .page-article__title {
   @include heading-font;
   margin: 0;
-  padding-top: 33px;
+  padding-top: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding-top: 61px;
+    padding-top: 66px;
+    padding-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,12 +21,16 @@
   @include basic-font;
   color: $color-mine-shaft;
   margin: 0;
-  padding-top: 37px;
-  padding-bottom: 47px;
+  padding-top: 24px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     width: 440px;
     margin: 0 auto;
-    padding-bottom: 90px;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 88px;
   }
 }

@@ -1,0 +1,19 @@
+@import "../general/mixins.scss";
+@import "../general/variables.scss";
+
+.button {
+  color: $color-white;
+  background-color: $color-sedona-blue;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

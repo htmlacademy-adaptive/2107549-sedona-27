@@ -4,9 +4,8 @@
 .sublist {
   background-color: $color-white;
   color: $color-black;
-  padding-top: 36px;
+  padding-top: 10px;
   padding-bottom: 46px;
-  padding-left: 65px;
   padding-right: 18px;
 
   @media (min-width: $tablet-width) {
@@ -17,6 +16,20 @@
 }
 
 .sublist__item {
+  &--gifts {
+    padding-left: 4px;
+    margin-top: -21px;
+  }
+
+  &--food {
+    margin-top: -17px;
+    padding: 25px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -31,36 +44,133 @@
 
 .sublist__item-title {
   @include heading-font;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--accomodation {
+    gap: 9px;
+    margin-top: 11px;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      gap: 26px;
+      padding-top: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 71px;
+    }
+
+    &::before {
+      content: url("../../img/home-icon.svg");
+      width: 39px;
+      height: 37px;
+
+      @media (min-width: $tablet-width) {
+        content: url("../../img/home-icon--tablet.svg");
+        width: 77px;
+        height: 72px;
+      }
+    }
+  }
+
+  &--food {
+    gap: 8px;
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      gap: 24px;
+      padding-top: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 89px;
+    }
+
+    &::before {
+      content: url("../../img/food-icon.svg");
+      width: 40px;
+      height: 35px;
+
+      @media (min-width: $tablet-width) {
+        content: url("../../img/food-icon--tablet.svg");
+        width: 77px;
+        height: 72px;
+      }
+
+      @media (min-width: $desktop-width) {
+        content: url("../../img/food-icon--desktop.svg");
+        width: 77px;
+        height: 72px;
+      }
+    }
+  }
+
+  &--gifts {
+    gap: 11px;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+      padding-top: 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 30px;
+      padding-top: 90px;
+    }
+
+    &::before {
+      content: url("../../img/gift-icon.svg");
+      width: 32px;
+      height: 38px;
+
+      @media (min-width: $tablet-width) {
+        content: url("../../img/gift-icon--tablet.svg");
+        width: 77px;
+        height: 72px;
+      }
+
+      @media (min-width: $desktop-width) {
+        content: url("../../img/gift-icon--desktop.svg");
+        width: 77px;
+        height: 72px;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     margin: 0;
-    margin-top: 160px;
   }
 }
 
 .sublist__item-description {
   @include basic-font;
-  padding-top: 16px;
+  padding-left: 66px;
   color: $color-mine-shaft;
+  margin: 0;
+
+  &--gifts {
+    padding-left: 61px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 65px;
+    margin-top: 22px;
+    margin-bottom: 61px;
     width: 190px;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
-  }
-}
-
-.sublist__item--food {
-  padding: 25px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
+    margin-bottom: 69px;
   }
 }

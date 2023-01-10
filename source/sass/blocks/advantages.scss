@@ -41,10 +41,10 @@
     @include heading-font;
     text-align: center;
     margin: 0;
-    padding-top: 54px;
+    padding-top: 55px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 42px;
+      padding-top: 53px;
     }
 
     @media (min-width: $desktop-width) {
@@ -57,6 +57,10 @@
     text-align: center;
     margin: 0;
     padding-top: 37px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 54px;
+    }
 
     @media (min-width: $desktop-width) {
       padding-top: 52px;
@@ -83,6 +87,11 @@
     &--road {
       padding-top: 53px;
     }
+
+    &--space,
+    &--tourists {
+      padding-top: 64px;
+    }
   }
 }
 
@@ -91,11 +100,14 @@
 }
 
 .advantages__sedona-city-photo {
+  display: block;
   object-fit: cover;
+  width: 320px;
   height: 260px;
 
   @media (min-width: $tablet-width) {
     width: 512px;
+    height: 256px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,11 +116,14 @@
 }
 
 .advantages__sedona-bridge-photo {
+  display: block;
   object-fit: cover;
+  width: 320px;
   height: 260px;
 
   @media (min-width: $tablet-width) {
     width: 512px;
+    height: 256px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,12 +136,35 @@
   @include basic-font;
   text-align: center;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 16px;
   color: $color-mine-shaft;
 
-  &--real-city {
+  &--real-city,
+  &--bridge {
     color: $color-white;
+  }
+
+  &--real-city {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 24px;
+    }
+  }
+
+  &--bridge {
+    padding-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 24px;
+    }
+  }
+
+  &--space,
+  &--road,
+  &--tourists {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 25px;
+    }
   }
 }
 
@@ -134,7 +172,7 @@
   @include basic-font;
   text-align: center;
   margin: 0;
-  padding-bottom: 37px;
+  padding-bottom: 40px;
   color: $color-mine-shaft;
 
   &--tourists {
@@ -144,6 +182,7 @@
   &--space,
   &--road {
     position: relative;
+    padding-bottom: 28px;
   }
 
   &--space::after,
@@ -159,8 +198,13 @@
     content: "";
   }
 
-  &--real-city {
+  &--real-city,
+  &--bridge {
     color: $color-white;
+  }
+
+  &--bridge {
+    padding-bottom: 36px;
   }
 
   @media (min-width: $tablet-width) {
@@ -180,6 +224,10 @@
 
   @media (min-width: $desktop-width) {
     width: 300px;
+
+    &--space {
+      padding-bottom: 42px;
+    }
   }
 }
 

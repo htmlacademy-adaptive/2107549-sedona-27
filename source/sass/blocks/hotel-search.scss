@@ -5,7 +5,7 @@
   @include heading-big-font;
   text-align: center;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -17,7 +17,7 @@
   @include basic-font;
   text-align: center;
   margin: 0;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
@@ -28,28 +28,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 46px;
+    padding-top: 31px;
+    padding-bottom: 47px;
   }
 }
 
 .hotel-search__button {
   @include heading-big-font;
   display: flex;
-  text-decoration: none;
-  color: $color-white;
-  background-color: $color-sedona-blue;
   justify-content: center;
   padding: 16px 0;
   margin: 0 18px;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);
-  }
 
   @media (min-width: $tablet-width) {
     width: 458px;

@@ -1,0 +1,36 @@
+@import "../general/variables.scss";
+
+.radio-button__mark {
+  position: absolute;
+  margin-top: 8px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: $color-concrete;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-mercury;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.radio-button__input:checked + .radio-button__mark::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $color-mine-shaft;
+  content: "";
+}
+
+.radio-button__text {
+  padding-left: 62px;
+}

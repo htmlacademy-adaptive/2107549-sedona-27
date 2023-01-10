@@ -4,7 +4,7 @@
 .description__sedona {
   @include heading-font;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     width: 520px;
@@ -31,5 +31,16 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 44px;
+  }
+}
+
+.description__triangle {
+  position: absolute;
+  top: 650px;
+  width: 320px;
+  fill: $color-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
