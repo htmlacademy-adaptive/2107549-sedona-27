@@ -13,7 +13,7 @@ import svgo from 'gulp-svgmin';
 import {deleteAsync as del} from 'del';
 
 // styles
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
