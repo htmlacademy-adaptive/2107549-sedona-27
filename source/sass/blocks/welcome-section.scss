@@ -16,6 +16,11 @@
     background-image: url("../../img/background-sedona-picture@2x.jpg");
   }
 
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+
   &--catalog,
   &--form {
     padding-top: 52px;
