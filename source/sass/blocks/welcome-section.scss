@@ -26,6 +26,11 @@
     padding-top: 52px;
     padding-bottom: 67px;
 
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+      background-position: bottom;
+      background-size: 280%;
+    }
+
     @media (min-width: $desktop-width) {
       padding-bottom: 78px;
     }
