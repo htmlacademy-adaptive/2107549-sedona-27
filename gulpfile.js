@@ -55,11 +55,6 @@ export const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-export const favicon = () => {
-  return gulp.src('source/*.ico')
-    .pipe(gulp.dest('build'))
-}
-
 
 // webp
 export const createWebp = () => {
@@ -100,9 +95,15 @@ const server = (done) => {
 
 // copy
 export const copy = (done) => {
-  gulp.src('source/fonts/*.{woff2,woff}')
-    .pipe(gulp.dest('build/fonts'))
-    done();
+  gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+    'source/manifest.webmanifest',
+  ], {
+    base: 'source'
+  })
+  .pipe(gulp.dest('build'))
+  done();
 }
 
 
@@ -136,7 +137,6 @@ export const build = gulp.series(
     html,
     script,
     svg,
-    favicon,
     sprite,
     createWebp
   ),
@@ -152,7 +152,6 @@ export default gulp.series(
     html,
     script,
     svg,
-    favicon,
     sprite,
     createWebp
   ),
