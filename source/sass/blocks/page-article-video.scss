@@ -21,11 +21,15 @@
   @include basic-font;
   margin: 0;
   padding-top: 26px;
-  padding-bottom: 38px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 445px;
     margin: 0 auto;
     padding-bottom: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
   }
 }

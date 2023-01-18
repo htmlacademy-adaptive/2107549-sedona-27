@@ -2,12 +2,13 @@
 
 .radio-button__mark {
   position: absolute;
-  margin-top: 8px;
+  margin-top: -11px;
   width: 46px;
   height: 46px;
   border: none;
   background-color: $color-concrete;
   border-radius: 50%;
+  transition: 100ms all ease;
   cursor: pointer;
 
   &:hover {

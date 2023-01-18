@@ -18,7 +18,16 @@
   text-decoration: none;
   margin: 0;
   padding-top: 34px;
+  transition: 100ms all ease;
   color: $color-black;
+
+  &:hover {
+    color: $color-sedona-blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 60px;

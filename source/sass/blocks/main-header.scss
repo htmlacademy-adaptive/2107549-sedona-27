@@ -27,6 +27,7 @@
   background-color: $color-white;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 100ms all ease;
   cursor: pointer;
 
   &:hover {

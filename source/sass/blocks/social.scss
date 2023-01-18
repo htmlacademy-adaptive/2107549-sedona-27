@@ -24,6 +24,7 @@
   height: 48px;
   fill: $color-white;
   background-color: $color-sedona-blue;
+  transition: 100ms all ease;
 
   &:hover {
     background-color: #669ec0;

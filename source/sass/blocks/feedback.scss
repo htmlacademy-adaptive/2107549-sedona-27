@@ -55,6 +55,7 @@
 
 .feedback__radio-list {
   display: flex;
+  gap: 36px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -80,13 +81,14 @@
 
 .feedback__checkbox-list {
   display: flex;
+  gap: 36px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 480px;
+    width: 490px;
     margin: 0 auto;
     margin-left: 88px;
   }
@@ -94,6 +96,7 @@
   @media (min-width: $desktop-width) {
     width: 910px;
     margin-left: 123px;
+    gap: 18px;
   }
 }
 
@@ -161,6 +164,8 @@
   }
 
   &--impression {
+    padding-bottom: 33px;
+
     @media (min-width: $tablet-width) {
       &::before {
         position: absolute;
@@ -207,6 +212,8 @@
   }
 
   &--sight {
+    padding-bottom: 32px;
+
     @media (min-width: $tablet-width) {
       &::before {
         position: absolute;
@@ -325,17 +332,18 @@
 
 .feedback__legend {
   @include heading-font;
+  margin: 0 auto;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 19px;
 
   &--impression {
-    padding-bottom: 12px;
+    padding-bottom: 30px;
   }
 
   &--sight {
     padding-top: 25px;
-    padding-bottom: 11px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: $tablet-width) {
@@ -354,7 +362,7 @@
 
     &--sight {
       width: 308px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
     }
 
     &--emotions {
@@ -382,7 +390,7 @@
 
     &--sight {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 71px;
     }
 
     &--emotions {
@@ -433,42 +441,45 @@
 
   @media (min-width: $tablet-width) {
     &--sight-bridge {
-      padding-left: 16px;
+      padding-left: 10px;
     }
 
     &--sight-kolokol {
-      padding-left: 48px;
+      padding-right: 6px;
     }
 
     &--sight-slidepark {
-      padding-left: 30px;
+      padding-left: 17px;
     }
 
     &--sight-rocks {
-      padding-left: 88px;
+      padding-left: 35px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--sight-bridge {
-      padding-left: 8px;
+      padding-left: 3px;
     }
 
     &--sight-kolokol {
-      padding-left: 32px;
+      padding-left: 6px;
+      padding-right: 6px;
     }
 
     &--sight-slidepark {
-      padding-left: 38px;
+      padding-left: 0;
     }
 
     &--sight-rocks {
-      padding-left: 37px;
+      padding-left: 6px;
     }
   }
 }
 
 .feedback__input {
+  transition: 100ms all ease;
+
   &--name {
     @include heading-font;
     display: block;
@@ -478,6 +489,11 @@
     margin: 0;
     padding: 16px;
     margin-left: -16px;
+
+    &::placeholder {
+      color: $color-black;
+      opacity: 1;
+    }
   }
 
   &--contacts {
@@ -491,10 +507,11 @@
     padding-right: 0;
     margin-left: -16px;
     border-right: 58px solid $color-whisper;
-  }
 
-  &--contacts::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+    }
   }
 
   &:hover {

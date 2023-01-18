@@ -9,6 +9,7 @@
   margin: 0;
   gap: 12px;
   color: $color-black;
+  transition: 100ms all ease;
 
   &:hover {
     color: $color-sedona-blue;

@@ -6,6 +6,7 @@
   background-color: $color-sedona-blue;
   text-decoration: none;
   border: none;
+  transition: 100ms all ease;
   cursor: pointer;
 
   &:hover {
@@ -15,5 +16,9 @@
   &:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-mercury;
   }
 }
