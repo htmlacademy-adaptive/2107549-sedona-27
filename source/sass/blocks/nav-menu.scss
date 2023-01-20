@@ -159,6 +159,8 @@
 
   @media (min-width: $tablet-width) {
     @include basic-font;
+    display: block;
+    width: 153px;
     font-weight: 700;
     color: $color-black;
 
@@ -173,5 +175,9 @@
     &--current {
       color: #766357;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
   }
 }
