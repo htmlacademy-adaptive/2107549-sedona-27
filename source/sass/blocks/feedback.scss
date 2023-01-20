@@ -190,9 +190,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: absolute;
-        bottom: 129px;
-        left: 120px;
+        position: relative;
+        bottom: 45px;
+        left: 100px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -200,9 +200,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 129px;
-        right: 120px;
+        position: relative;
+        bottom: 158px;
+        left: 779px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -238,9 +238,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: absolute;
-        bottom: 155px;
-        left: 120px;
+        position: relative;
+        bottom: 100px;
+        left: 100px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -248,9 +248,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 155px;
-        right: 120px;
+        position: relative;
+        bottom: 126px;
+        left: 779px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -286,9 +286,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: absolute;
-        bottom: 207px;
-        left: 120px;
+        position: relative;
+        bottom: 45px;
+        left: 100px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -296,9 +296,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 207px;
-        right: 120px;
+        position: relative;
+        bottom: 210px;
+        left: 779px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -394,7 +394,7 @@
     }
 
     &--emotions {
-      padding-top: 64px;
+      padding-top: 60px;
     }
   }
 }
