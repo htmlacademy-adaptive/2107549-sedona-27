@@ -502,10 +502,9 @@
     text-transform: none;
     background-color: $color-concrete;
     border: none;
-    margin: 0;
+    margin: 0 0 0 -16px;
     padding: 16px;
     padding-right: 0;
-    margin-left: -16px;
     border-right: 58px solid $color-whisper;
 
     &::placeholder {
