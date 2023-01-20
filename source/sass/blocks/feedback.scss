@@ -168,9 +168,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: absolute;
-        bottom: 173px;
-        left: 61px;
+        position: relative;
+        bottom: 45px;
+        left: 41px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -178,9 +178,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 173px;
-        right: 59px;
+        position: relative;
+        bottom: 141px;
+        left: 565px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -216,9 +216,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: absolute;
-        bottom: 186px;
-        left: 61px;
+        position: relative;
+        bottom: 68px;
+        left: 41px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -226,9 +226,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 186px;
-        right: 59px;
+        position: relative;
+        bottom: 157px;
+        left: 565px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -264,9 +264,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: absolute;
-        bottom: 206px;
-        left: 61px;
+        position: relative;
+        bottom: 46px;
+        left: 41px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -274,9 +274,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 206px;
-        right: 59px;
+        position: relative;
+        bottom: 211px;
+        left: 565px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
