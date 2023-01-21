@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона | Форма отзыва</title>
+    <link rel="preload" href="./fonts/ptsans.woff2" crossorigin="anonymous" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" crossorigin="anonymous" as="font">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -83,7 +85,7 @@
                     <use href="./img/sprite.svg#phone"></use>
                   </svg>
                 </label>
-                <label class="feedback__field feedback__field--contacts" for="email">Электронная почта*:
+                <label class="feedback__field feedback__field--contacts feedback__field--contacts-mail" for="email">Электронная почта*:
                   <input class="feedback__input feedback__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                   <svg class="feedback__mail-icon" width="16" height="12">
                     <use href="./img/sprite.svg#mail"></use>

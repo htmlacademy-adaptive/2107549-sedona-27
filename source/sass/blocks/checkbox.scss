@@ -19,6 +19,14 @@
   }
 }
 
+.checkbox__input:disabled + .checkbox__mark {
+  opacity: 0.2;
+
+  &:hover {
+    background-color: $color-concrete;
+  }
+}
+
 .checkbox__input:checked + .checkbox__mark::before {
   position: absolute;
   width: 22px;

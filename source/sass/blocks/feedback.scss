@@ -419,6 +419,7 @@
   &--contacts {
     @include basic-font;
     display: flex;
+    position: relative;
     flex-direction: column;
     color: $color-mine-shaft;
     padding-left: 16px;
@@ -430,6 +431,11 @@
     @media (min-width: $desktop-width) {
       margin-left: 0;
     }
+  }
+
+  &--contacts-mail {
+    padding-top: 17px;
+    padding-bottom: 19px;
   }
 
   &--impression,
@@ -559,18 +565,18 @@
   display: block;
   width: 18px;
   height: 18px;
-  position: relative;
-  left: 226px;
-  bottom: 38px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    left: 222px;
-    bottom: 38px;
+    right: 19px;
+    bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 351px;
-    bottom: 38px;
+    right: 21px;
+    bottom: 21px;
   }
 }
 
@@ -578,17 +584,17 @@
   display: block;
   width: 17px;
   height: 17px;
-  position: relative;
-  left: 226px;
+  position: absolute;
+  right: 20px;
   bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    left: 222px;
-    bottom: 38px;
+    right: 19px;
+    bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 352px;
-    bottom: 38px;
+    right: 22px;
+    bottom: 41px;
   }
 }

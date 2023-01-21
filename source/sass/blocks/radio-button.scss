@@ -20,6 +20,14 @@
   }
 }
 
+.radio-button__input:disabled + .radio-button__mark {
+  opacity: 0.2;
+
+  &:hover {
+    background-color: $color-concrete;
+  }
+}
+
 .radio-button__input:checked + .radio-button__mark::after {
   position: absolute;
   top: 50%;
