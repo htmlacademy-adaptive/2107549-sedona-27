@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона | Главная</title>
+    <link rel="preload" href="./fonts/ptsans.woff2" crossorigin="anonymous" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" crossorigin="anonymous" as="font">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -21,11 +23,11 @@
           <button class="main-header__nav-toggle" type="button">
             <span class="visually-hidden">Меню.</span>
           </button>
-          <div class="nav-menu nav-menu--closed">
+          <div class="nav-menu nav-menu--open">
             <ul class="nav-menu__list list">
               <li class="nav-menu__item nav-menu__item--index">
                 <a class="nav-menu__link nav-menu__link--current" href="index.html">Главная</a>
-                <button class="nav-menu__close-toggle" type="button">
+                <button class="nav-menu__close-toggle visually-hidden" type="button">
                   <span class="visually-hidden">Закрыть.</span>
                 </button>
               </li>
@@ -91,7 +93,7 @@
                 </li>
                 <li class="sublist__item sublist__item--gifts">
                   <h3 class="sublist__item-title sublist__item-title--gifts">Сувениры</h3>
-                  <p class="sublist__item-description sublist__item-description--gifts">Не только китайского, <br>но и местного производства!</p>
+                  <p class="sublist__item-description sublist__item-description--gifts">Не только китайского,&nbsp;<br>но и местного производства!</p>
                 </li>
               </ul>
             </li>
@@ -112,16 +114,16 @@
             </li>
             <li class="advantages__item advantages__item--road">
               <div class="advantages__wrapper">
-                <h3 class="advantages__title advantages__title--road">Красивая <br>дорога</h3>
+                <h3 class="advantages__title advantages__title--road">Красивая&nbsp;<br>дорога</h3>
                 <p class="advantages__number advantages__number--road">&mdash; №4 &mdash;</p>
                 <p class="advantages__description advantages__description--road">Ехать в Седону из Лас-Вегаса совсем<br>&nbsp;не&nbsp;скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--tourists">
               <div class="advantages__wrapper">
-                <h3 class="advantages__title advantages__title--tourists">Мало <br>туристов</h3>
+                <h3 class="advantages__title advantages__title--tourists">Мало&nbsp;<br>туристов</h3>
                 <p class="advantages__number advantages__number--tourists">&mdash; №5 &mdash;</p>
-                <p class="advantages__description advantages__description--tourists">Большинство едет в Гранд Каньон и толпится там</p>
+                <p class="advantages__description advantages__description--tourists">Большинство едет в Гранд Каньон и&nbsp;толпится там</p>
               </div>
             </li>
           </ul>
@@ -177,6 +179,6 @@
         </div>
       </footer>
     </div>
-  <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

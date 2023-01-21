@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона | Форма отзыва</title>
+    <link rel="preload" href="./fonts/ptsans.woff2" crossorigin="anonymous" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" crossorigin="anonymous" as="font">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -65,13 +67,13 @@
               <fieldset class="feedback__item feedback__item--name">
                 <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
                 <label class="feedback__field feedback__field--name" for="name">Имя*:
-                  <input class="feedback__input feedback__input--name" type="text" name="name" id="name" value="Пётр" required>
+                  <input class="feedback__input feedback__input--name" type="text" name="name" id="name" value="Пётр" placeholder="Пётр" required>
                 </label>
                 <label class="feedback__field feedback__field--name" for="surname">Фамилия*:
-                  <input class="feedback__input feedback__input--name" type="text" name="surname" id="surname" value="Пустота" required>
+                  <input class="feedback__input feedback__input--name" type="text" name="surname" id="surname" value="Пустота" placeholder="Пустота" required>
                 </label>
                 <label class="feedback__field feedback__field--name" for="middle-name">Отчество:
-                  <input class="feedback__input feedback__input--name" type="text" name="middle-name" id="middle-name" value="Викторович">
+                  <input class="feedback__input feedback__input--name" type="text" name="middle-name" id="middle-name" value="Викторович" placeholder="Викторович">
                 </label>
               </fieldset>
 
@@ -83,7 +85,7 @@
                     <use href="./img/sprite.svg#phone"></use>
                   </svg>
                 </label>
-                <label class="feedback__field feedback__field--contacts" for="email">Электронная почта*:
+                <label class="feedback__field feedback__field--contacts feedback__field--contacts-mail" for="email">Электронная почта*:
                   <input class="feedback__input feedback__input--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                   <svg class="feedback__mail-icon" width="16" height="12">
                     <use href="./img/sprite.svg#mail"></use>
@@ -98,17 +100,17 @@
                 <label class="feedback__field feedback__field--impression radio-button">
                   <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>
                   <span class="radio-button__mark"></span>
-                  <p class="radio-button__text">Скорее положительное</p>
+                  <span class="radio-button__text">Скорее положительное</span>
                 </label>
                 <label class="feedback__field feedback__field--impression radio-button">
                   <input class="radio-button__input visually-hidden" type="radio" name="impression" value="bad">
                   <span class="radio-button__mark"></span>
-                  <p class="radio-button__text">Скорее отрицательное</p>
+                  <span class="radio-button__text">Скорее отрицательное</span>
                 </label>
                 <label class="feedback__field feedback__field--impression radio-button">
                   <input class="radio-button__input visually-hidden" type="radio" name="impression" value="idk">
                   <span class="radio-button__mark"></span>
-                  <p class="radio-button__text">Затрудняюсь ответить</p>
+                  <span class="radio-button__text">Затрудняюсь ответить</span>
                 </label>
               </div>
             </fieldset>
@@ -119,23 +121,24 @@
                 <label class="feedback__field feedback__field--sight feedback__field--sight-bridge checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="bridge" checked>
                   <span class="checkbox__mark"></span>
-                  <p class="checkbox__text">Мост Дьявола</p>
+                  <span class="checkbox__text">Мост Дьявола</span>
                 </label>
                 <label class="feedback__field feedback__field--sight feedback__field--sight-kolokol checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="mountain" checked>
                   <span class="checkbox__mark"></span>
-                  <p class="checkbox__text">Гора-Колокол</p>
+                  <span class="checkbox__text">Гора-Колокол</span>
                 </label>
                 <label class="feedback__field feedback__field--sight feedback__field--sight-slidepark checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="park" checked>
                   <span class="checkbox__mark"></span>
-                  <p class="checkbox__text">Слайд-парк</p>
+                  <span class="checkbox__text">Слайд-парк</span>
                 </label>
                 <label class="feedback__field feedback__field--sight feedback__field--sight-rocks checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="attractions" value="rocks">
                   <span class="checkbox__mark"></span>
-                  <p class="checkbox__text">Красные скалы</p>
+                  <span class="checkbox__text">Красные скалы</span>
                 </label>
+
               </div>
             </fieldset>
 
@@ -209,6 +212,6 @@
         </div>
       </div>
     </div>
-  <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

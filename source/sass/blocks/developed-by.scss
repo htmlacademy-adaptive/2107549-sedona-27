@@ -9,6 +9,7 @@
   margin: 0;
   gap: 12px;
   color: $color-black;
+  transition: 100ms all ease;
 
   &:hover {
     color: $color-sedona-blue;
@@ -21,7 +22,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 17px;
     padding-top: 3px;
   }
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона | Фото и видео</title>
+    <link rel="preload" href="./fonts/ptsans.woff2" crossorigin="anonymous" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" crossorigin="anonymous" as="font">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -174,9 +176,7 @@
           <div class="video__player">
             <img class="video__player-splash-screen" width="280" height="177" src="img/video-desktop.jpg" srcset="img/video-desktop@2x 2x" alt="Видеопрезентация туристического города Седона.">
           </div>
-          <svg class="video__play-button" width="48" height="54">
-            <use href="./img/sprite.svg#play"></use>
-          </svg>
+          <button class="video__play-button" type="button" aria-label="Кнопка воспроизведения."></button>
         </section>
       </main>
 
@@ -220,6 +220,6 @@
         </div>
       </footer>
     </div>
-  <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

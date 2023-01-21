@@ -2,12 +2,13 @@
 
 .radio-button__mark {
   position: absolute;
-  margin-top: 8px;
+  margin-top: -11px;
   width: 46px;
   height: 46px;
   border: none;
   background-color: $color-concrete;
   border-radius: 50%;
+  transition: 100ms all ease;
   cursor: pointer;
 
   &:hover {
@@ -16,6 +17,14 @@
 
   &:active {
     background-color: #d5d5d5;
+  }
+}
+
+.radio-button__input:disabled + .radio-button__mark {
+  opacity: 0.2;
+
+  &:hover {
+    background-color: $color-concrete;
   }
 }
 
@@ -33,4 +42,6 @@
 
 .radio-button__text {
   padding-left: 62px;
+  display: block;
+  white-space: wrap;
 }

@@ -10,11 +10,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;
-    padding-left: 13px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 14px;
+    margin-bottom: 36px;
   }
 }
 
@@ -24,6 +20,7 @@
   height: 48px;
   fill: $color-white;
   background-color: $color-sedona-blue;
+  transition: 100ms all ease;
 
   &:hover {
     background-color: #669ec0;

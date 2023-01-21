@@ -7,8 +7,14 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0 60px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px 0 120px;
   }
 }
 
@@ -18,16 +24,25 @@
   text-decoration: none;
   margin: 0;
   padding-top: 34px;
+  transition: 100ms all ease;
   color: $color-black;
 
+  &:hover {
+    color: $color-sedona-blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 60px;
+    margin: 0;
     padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 117px;
-    padding: 5px 0 0 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -39,13 +54,7 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 77px 0 0;
-    padding: 0;
-    padding-top: 4px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 120px 0 0;
+    margin: 0;
     padding: 0;
   }
 }

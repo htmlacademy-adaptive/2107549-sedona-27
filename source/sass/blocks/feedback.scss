@@ -55,6 +55,7 @@
 
 .feedback__radio-list {
   display: flex;
+  gap: 36px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -80,13 +81,14 @@
 
 .feedback__checkbox-list {
   display: flex;
+  gap: 36px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 480px;
+    width: 490px;
     margin: 0 auto;
     margin-left: 88px;
   }
@@ -94,6 +96,7 @@
   @media (min-width: $desktop-width) {
     width: 910px;
     margin-left: 123px;
+    gap: 18px;
   }
 }
 
@@ -112,6 +115,10 @@
     @media (min-width: $tablet-width) {
       border-bottom: none;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 20px;
+    }
   }
 
   &--contacts {
@@ -121,7 +128,7 @@
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
-      padding-right: 50px;
+      padding-right: 46px;
 
       &::before {
         position: absolute;
@@ -135,7 +142,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 70px;
+      padding-right: 74px;
 
       &::before {
         position: absolute;
@@ -161,11 +168,13 @@
   }
 
   &--impression {
+    padding-bottom: 33px;
+
     @media (min-width: $tablet-width) {
       &::before {
-        position: absolute;
-        bottom: 173px;
-        left: 61px;
+        position: relative;
+        bottom: 45px;
+        left: 41px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -173,9 +182,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 173px;
-        right: 59px;
+        position: relative;
+        bottom: 141px;
+        left: 565px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -185,9 +194,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: absolute;
-        bottom: 129px;
-        left: 120px;
+        position: relative;
+        bottom: 45px;
+        left: 100px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -195,9 +204,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 129px;
-        right: 120px;
+        position: relative;
+        bottom: 96px;
+        left: 779px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -207,11 +216,13 @@
   }
 
   &--sight {
+    padding-bottom: 32px;
+
     @media (min-width: $tablet-width) {
       &::before {
-        position: absolute;
-        bottom: 186px;
-        left: 61px;
+        position: relative;
+        bottom: 68px;
+        left: 41px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -219,9 +230,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 186px;
-        right: 59px;
+        position: relative;
+        bottom: 157px;
+        left: 565px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -231,9 +242,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: absolute;
-        bottom: 155px;
-        left: 120px;
+        position: relative;
+        bottom: 100px;
+        left: 100px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -241,9 +252,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 155px;
-        right: 120px;
+        position: relative;
+        bottom: 126px;
+        left: 779px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -257,9 +268,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: absolute;
-        bottom: 206px;
-        left: 61px;
+        position: relative;
+        bottom: 46px;
+        left: 41px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -267,9 +278,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 206px;
-        right: 59px;
+        position: relative;
+        bottom: 211px;
+        left: 565px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -279,9 +290,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: absolute;
-        bottom: 207px;
-        left: 120px;
+        position: relative;
+        bottom: 45px;
+        left: 100px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -289,9 +300,9 @@
       }
 
       &::after {
-        position: absolute;
-        bottom: 207px;
-        right: 120px;
+        position: relative;
+        bottom: 210px;
+        left: 779px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -313,7 +324,7 @@
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 42px;
-      margin-bottom: 50px;
+      margin-bottom: 47px;
     }
 
     @media (min-width: $desktop-width) {
@@ -325,36 +336,37 @@
 
 .feedback__legend {
   @include heading-font;
+  margin: 0 auto;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 19px;
 
   &--impression {
-    padding-bottom: 12px;
+    padding-bottom: 30px;
   }
 
   &--sight {
     padding-top: 25px;
-    padding-bottom: 11px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
 
     &--name {
-      margin-left: 32px;
+      margin-left: 65px;
       padding-bottom: 28px;
-      width: 275px;
+      width: 240px;
     }
 
     &--contacts {
       padding-bottom: 28px;
-      padding-right: 18px;
+      padding-right: 24px;
     }
 
     &--sight {
       width: 308px;
-      padding-bottom: 20px;
+      padding-bottom: 37px;
     }
 
     &--emotions {
@@ -365,13 +377,11 @@
 
   @media (min-width: $desktop-width) {
     &--name {
-      margin-left: 62px;
-      padding-bottom: 28px;
-      width: 410px;
+      margin-left: 112px;
+      width: 370px;
     }
 
     &--contacts {
-      padding-bottom: 28px;
       padding-right: 105px;
       margin-left: 20px;
     }
@@ -382,11 +392,11 @@
 
     &--sight {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 71px;
     }
 
     &--emotions {
-      padding-top: 64px;
+      padding-top: 60px;
     }
   }
 }
@@ -400,7 +410,7 @@
     padding-left: 16px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 26px;
+      margin-left: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -411,6 +421,7 @@
   &--contacts {
     @include basic-font;
     display: flex;
+    position: relative;
     flex-direction: column;
     color: $color-mine-shaft;
     padding-left: 16px;
@@ -424,6 +435,11 @@
     }
   }
 
+  &--contacts-mail {
+    padding-top: 17px;
+    padding-bottom: 19px;
+  }
+
   &--impression,
   &--sight {
     @include heading-font;
@@ -433,42 +449,45 @@
 
   @media (min-width: $tablet-width) {
     &--sight-bridge {
-      padding-left: 16px;
+      padding-left: 10px;
     }
 
     &--sight-kolokol {
-      padding-left: 48px;
+      padding-right: 6px;
     }
 
     &--sight-slidepark {
-      padding-left: 30px;
+      padding-left: 17px;
     }
 
     &--sight-rocks {
-      padding-left: 88px;
+      padding-left: 35px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--sight-bridge {
-      padding-left: 8px;
+      padding-left: 3px;
     }
 
     &--sight-kolokol {
-      padding-left: 32px;
+      padding-left: 6px;
+      padding-right: 6px;
     }
 
     &--sight-slidepark {
-      padding-left: 38px;
+      padding-left: 0;
     }
 
     &--sight-rocks {
-      padding-left: 37px;
+      padding-left: 6px;
     }
   }
 }
 
 .feedback__input {
+  transition: 100ms all ease;
+
   &--name {
     @include heading-font;
     display: block;
@@ -478,6 +497,11 @@
     margin: 0;
     padding: 16px;
     margin-left: -16px;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+    }
   }
 
   &--contacts {
@@ -486,15 +510,15 @@
     text-transform: none;
     background-color: $color-concrete;
     border: none;
-    margin: 0;
+    margin: 0 0 0 -16px;
     padding: 16px;
     padding-right: 0;
-    margin-left: -16px;
     border-right: 58px solid $color-whisper;
-  }
 
-  &--contacts::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+      opacity: 1;
+    }
   }
 
   &:hover {
@@ -543,18 +567,18 @@
   display: block;
   width: 18px;
   height: 18px;
-  position: relative;
-  left: 226px;
-  bottom: 38px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    left: 222px;
-    bottom: 38px;
+    right: 19px;
+    bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 351px;
-    bottom: 38px;
+    right: 21px;
+    bottom: 21px;
   }
 }
 
@@ -562,17 +586,17 @@
   display: block;
   width: 17px;
   height: 17px;
-  position: relative;
-  left: 226px;
+  position: absolute;
+  right: 20px;
   bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    left: 222px;
-    bottom: 38px;
+    right: 19px;
+    bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 352px;
-    bottom: 38px;
+    right: 22px;
+    bottom: 41px;
   }
 }
