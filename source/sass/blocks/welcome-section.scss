@@ -31,7 +31,13 @@
       background-size: 280%;
     }
 
+    @media (min-width: $tablet-width) {
+      background-position: bottom;
+      background-size: 157%;
+    }
+
     @media (min-width: $desktop-width) {
+      background-size: 100%;
       padding-bottom: 78px;
     }
   }

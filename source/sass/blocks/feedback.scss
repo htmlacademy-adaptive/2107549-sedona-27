@@ -115,6 +115,10 @@
     @media (min-width: $tablet-width) {
       border-bottom: none;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 20px;
+    }
   }
 
   &--contacts {
@@ -124,7 +128,7 @@
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
-      padding-right: 50px;
+      padding-right: 46px;
 
       &::before {
         position: absolute;
@@ -138,7 +142,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 70px;
+      padding-right: 74px;
 
       &::before {
         position: absolute;
@@ -201,7 +205,7 @@
 
       &::after {
         position: relative;
-        bottom: 158px;
+        bottom: 96px;
         left: 779px;
         height: 1px;
         width: 280px;
@@ -320,7 +324,7 @@
       padding-left: 60px;
       padding-right: 60px;
       padding-top: 42px;
-      margin-bottom: 50px;
+      margin-bottom: 47px;
     }
 
     @media (min-width: $desktop-width) {
@@ -350,19 +354,19 @@
     font-size: 21px;
 
     &--name {
-      margin-left: 32px;
+      margin-left: 65px;
       padding-bottom: 28px;
-      width: 275px;
+      width: 240px;
     }
 
     &--contacts {
       padding-bottom: 28px;
-      padding-right: 18px;
+      padding-right: 24px;
     }
 
     &--sight {
       width: 308px;
-      padding-bottom: 40px;
+      padding-bottom: 37px;
     }
 
     &--emotions {
@@ -373,13 +377,11 @@
 
   @media (min-width: $desktop-width) {
     &--name {
-      margin-left: 62px;
-      padding-bottom: 28px;
-      width: 410px;
+      margin-left: 112px;
+      width: 370px;
     }
 
     &--contacts {
-      padding-bottom: 28px;
       padding-right: 105px;
       margin-left: 20px;
     }
@@ -408,7 +410,7 @@
     padding-left: 16px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 26px;
+      margin-left: 30px;
     }
 
     @media (min-width: $desktop-width) {
