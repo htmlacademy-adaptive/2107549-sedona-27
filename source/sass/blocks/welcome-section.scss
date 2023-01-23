@@ -67,6 +67,10 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .welcome-section__catalog-triangle,
