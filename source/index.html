@@ -16,7 +16,7 @@
     <div class="page__wrapper">
       <header class="main-header">
         <a class="main-header__logo" href="index.html">
-          <img src="img/city-of-sedona-logo.svg" width="185" height="96" alt="Логотип города Седона.">
+          <img src="./img/city-of-sedona-logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
 
         <nav class="main-header__nav">
@@ -50,7 +50,7 @@
 
         <section class="welcome-section">
           <h2 class="visually-hidden">Седона.</h2>
-          <img class="welcome-section__logo" src="img/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в прекрасный город Седона.">
+          <img class="welcome-section__logo" src="./img/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в прекрасный город Седона.">
           <svg class="welcome-section__index-triangle" width="1200" height="57" viewBox="0 0 1200 57" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
             <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z"/>
             <path d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z"/>
@@ -81,7 +81,10 @@
                 <p class="advantages__number advantages__number--real-city">&mdash; №1 &mdash;</p>
                 <p class="advantages__description advantages__description--real-city">Седона не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
               </div>
-              <img class="advantages__sedona-city-photo" src="./img/sedona-city-photo.jpg" width="512" height="260" srcset="img/sedona-city-photo@2x 2x" alt="Седона.">
+              <picture>
+                <source type="image/webp" srcset="img/sedona-city-photo.webp 1x, img/sedona-city-photo@2x.webp 2x">
+                <img class="advantages__sedona-city-photo" src="./img/sedona-city-photo.jpg" width="512" height="260" srcset="img/sedona-city-photo@2x 2x" alt="Седона.">
+              </picture>
               <ul class="advantages__sublist list sublist">
                 <li class="sublist__item sublist__item--accomodation">
                   <h3 class="sublist__item-title sublist__item-title--accomodation">Жилье</h3>
@@ -103,7 +106,10 @@
                 <p class="advantages__number advantages__number--bridge">&mdash; №2 &mdash;</p>
                 <p class="advantages__description advantages__description--bridge">Да, по нему можно пройти! <br class="breakpoint-desktop">Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__sedona-bridge-photo" src="img/sedona-bridge-photo.jpg" width="512" height="260" srcset="img/sedona-bridge-photo@2x 2x" alt="Мост Седоны.">
+              <picture>
+                <source type="image/webp" srcset="img/sedona-bridge-photo.webp 1x, img/sedona-bridge-photo@2x.webp 2x">
+                <img class="advantages__sedona-bridge-photo" src="img/sedona-bridge-photo.jpg" width="512" height="260" srcset="img/sedona-bridge-photo@2x 2x" alt="Мост Седоны.">
+              </picture>
             </li>
             <li class="advantages__item advantages__item--space">
               <div class="advantages__wrapper">
