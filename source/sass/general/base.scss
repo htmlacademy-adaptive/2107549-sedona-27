@@ -27,14 +27,14 @@ body {
   padding: 0;
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+@media (max-width: 767px) {
   br {
     display: none;
   }
 }
 
 .breakpoint-desktop {
-  @media (max-width: $desktop-width) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }

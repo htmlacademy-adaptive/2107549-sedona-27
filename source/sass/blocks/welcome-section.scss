@@ -4,8 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 77px;
-  padding-bottom: 91px;
   background-image: url("../../img/background-sedona-picture.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -16,9 +14,14 @@
     background-image: url("../../img/background-sedona-picture@2x.jpg");
   }
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) {
     padding-top: 90px;
     padding-bottom: 85px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 90px;
   }
 
   &--catalog,
@@ -59,13 +62,18 @@
     fill: #000000;
   }
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) {
     top: 389px;
     width: 320px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 768px;
+    top: 517px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
@@ -75,16 +83,18 @@
   fill: $color-white;
   top: 290px;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) {
     top: 158px;
     width: 320px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    top: 290px;
     width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     top: 301px;
+    width: 1200px;
   }
 }

@@ -172,9 +172,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: relative;
-        bottom: 45px;
-        left: 41px;
+        position: absolute;
+        top: -46px;
+        left: 60px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -182,9 +182,9 @@
       }
 
       &::after {
-        position: relative;
-        bottom: 141px;
-        left: 565px;
+        position: absolute;
+        top: -46px;
+        left: 585px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -194,9 +194,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: relative;
-        bottom: 45px;
-        left: 100px;
+        position: absolute;
+        top: -45px;
+        left: 120px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -204,9 +204,9 @@
       }
 
       &::after {
-        position: relative;
-        bottom: 96px;
-        left: 779px;
+        position: absolute;
+        top: -45px;
+        left: 800px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -220,9 +220,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: relative;
-        bottom: 68px;
-        left: 41px;
+        position: absolute;
+        top: -64px;
+        left: 60px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -230,9 +230,9 @@
       }
 
       &::after {
-        position: relative;
-        bottom: 157px;
-        left: 565px;
+        position: absolute;
+        top: -64px;
+        left: 585px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -242,9 +242,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: relative;
-        bottom: 100px;
-        left: 100px;
+        position: absolute;
+        top: -98px;
+        left: 120px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -252,9 +252,9 @@
       }
 
       &::after {
-        position: relative;
-        bottom: 126px;
-        left: 779px;
+        position: absolute;
+        top: -98px;
+        left: 800px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -268,9 +268,9 @@
 
     @media (min-width: $tablet-width) {
       &::before {
-        position: relative;
-        bottom: 46px;
-        left: 41px;
+        position: absolute;
+        top: -42px;
+        left: 60px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -278,9 +278,9 @@
       }
 
       &::after {
-        position: relative;
-        bottom: 211px;
-        left: 565px;
+        position: absolute;
+        top: -42px;
+        left: 585px;
         height: 1px;
         width: 123px;
         background-color: #dbdbdb;
@@ -290,9 +290,9 @@
 
     @media (min-width: $desktop-width) {
       &::before {
-        position: relative;
-        bottom: 45px;
-        left: 100px;
+        position: absolute;
+        top: -41px;
+        left: 120px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -300,9 +300,9 @@
       }
 
       &::after {
-        position: relative;
-        bottom: 210px;
-        left: 779px;
+        position: absolute;
+        top: -41px;
+        left: 800px;
         height: 1px;
         width: 280px;
         background-color: #dbdbdb;
@@ -370,7 +370,7 @@
     }
 
     &--emotions {
-      padding-top: 17px;
+      padding-top: 19px;
       padding-bottom: 30px;
     }
   }
@@ -382,8 +382,8 @@
     }
 
     &--contacts {
-      padding-right: 105px;
-      margin-left: 20px;
+      padding-right: 96px;
+      margin-left: 28px;
     }
 
     &--impression {
@@ -447,36 +447,46 @@
     padding: 0;
   }
 
+  &--sight {
+    @media (min-width: $tablet-width) {
+      width: 39%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 22%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &--sight-bridge {
-      padding-left: 10px;
+      padding-left: 24px;
     }
 
     &--sight-kolokol {
-      padding-right: 6px;
+      padding-left: 10px;
     }
 
     &--sight-slidepark {
-      padding-left: 17px;
+      padding-left: 30px;
     }
 
     &--sight-rocks {
-      padding-left: 35px;
+      padding-left: 18px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--sight-bridge {
-      padding-left: 3px;
+      padding-left: 18px;
     }
 
     &--sight-kolokol {
-      padding-left: 6px;
+      padding-left: 17px;
       padding-right: 6px;
     }
 
     &--sight-slidepark {
-      padding-left: 0;
+      padding-left: 8px;
     }
 
     &--sight-rocks {
