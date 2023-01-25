@@ -382,8 +382,8 @@
     }
 
     &--contacts {
-      padding-right: 105px;
-      margin-left: 20px;
+      padding-right: 96px;
+      margin-left: 28px;
     }
 
     &--impression {
@@ -448,39 +448,45 @@
   }
 
   &--sight {
-    width: 22%;
+    @media (min-width: $tablet-width) {
+      width: 39%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 22%;
+    }
   }
 
   @media (min-width: $tablet-width) {
     &--sight-bridge {
-      padding-left: 10px;
+      padding-left: 24px;
     }
 
     &--sight-kolokol {
-      padding-right: 6px;
+      padding-left: 10px;
     }
 
     &--sight-slidepark {
-      padding-left: 17px;
+      padding-left: 30px;
     }
 
     &--sight-rocks {
-      padding-left: 35px;
+      padding-left: 18px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--sight-bridge {
-      padding-left: 3px;
+      padding-left: 18px;
     }
 
     &--sight-kolokol {
-      padding-left: 6px;
+      padding-left: 17px;
       padding-right: 6px;
     }
 
     &--sight-slidepark {
-      padding-left: 0;
+      padding-left: 8px;
     }
 
     &--sight-rocks {
