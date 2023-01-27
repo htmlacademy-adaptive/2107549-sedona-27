@@ -64,6 +64,8 @@
 }
 
 .hotel-search__map {
+  display: block;
+
   @media (min-width: $tablet-width) {
     width: 768px;
   }
