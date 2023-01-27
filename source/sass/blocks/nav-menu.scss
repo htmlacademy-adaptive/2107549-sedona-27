@@ -7,7 +7,7 @@
   right: 0;
   z-index: 5;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     &--closed {
       display: none;
     }
@@ -77,7 +77,7 @@
     background-color: #5496bd;
   }
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (max-width: 767px) {
     &--empty {
       display: none;
     }
