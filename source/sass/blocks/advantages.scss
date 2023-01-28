@@ -217,17 +217,15 @@
       display: none;
     }
 
-    &--space {
-      padding-bottom: 52px;
+    &--space,
+    &--road,
+    &--tourists {
+      padding-bottom: 42px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
-
-    &--space {
-      padding-bottom: 42px;
-    }
   }
 }
 
