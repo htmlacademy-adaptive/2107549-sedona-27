@@ -61,21 +61,21 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 538px;
+    width: 549px;
     flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 7px;
-    padding-right: 40px;
+    padding-right: 27px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 853px;
+    width: 870px;
     flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 25px;
-    padding-right: 3px;
+    padding-left: 55px;
   }
 }
 
@@ -445,6 +445,16 @@
     @include heading-font;
     text-transform: none;
     padding: 0;
+  }
+
+  &--impression {
+    @media (min-width: $tablet-width) {
+      width: 46%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 29%;
+    }
   }
 
   &--sight {
