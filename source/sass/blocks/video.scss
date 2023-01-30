@@ -11,12 +11,12 @@
 
 .video__player-splash-screen {
   object-fit: cover;
-  margin-bottom: -62px;
+  margin-bottom: -67px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
-    margin-bottom: -20px;
+    margin-bottom: -16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,8 +43,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -261px;
-    left: 359px;
+    top: -267px;
+    left: 360px;
   }
 
   @media (min-width: $desktop-width) {
